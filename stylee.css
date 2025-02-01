@@ -1,0 +1,74 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 1.8rem;
+}
+
+/* Event Sections */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.event {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.event:hover {
+    transform: scale(1.02);
+}
+
+/* Event Titles */
+.event h2 {
+    color: #004080;
+    margin-bottom: 0.5rem;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 1.5rem;
+}
+
+ul li, ol li {
+    margin-bottom: 0.5rem;
+}
+
+/* Icons */
+ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+ul li::before {
+    content: "🏆";
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+    }
+    
+    header {
+        font-size: 1.5rem;
+    }
+}

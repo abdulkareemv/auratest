@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>AURA 2K25 Gallery</title>
+  <link rel="stylesheet" href="./styleg.css">
+ <style>
+    /* Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a2e;
+            color: #fff;
+            line-height: 1.6;
+        }
+        /* Header */
+        .header {
+            background-color: #0f0f1f;
+            padding: 1rem 0;
+        }
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .header .logo img {
+            width: 120px;
+        }
+   .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 1rem;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar ul li a:hover {
+            color: #7f00ff; /* Matching gradient start color */
+        }
+
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a futuristic gallery showcasing cutting-edge technology and designs.">
+    <title>Futuristic Gallery</title>
+    <link rel="stylesheet" href="styleg.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://i.postimg.cc/ydY9rV5m/futuristic-exoskeleton-suit.jpg" as="image">
+    <link rel="preload" href="https://i.postimg.cc/zvyh8xq3/technical-futuuristic-items.jpg" as="image">
+    <link rel="preload" href="https://i.postimg.cc/bJCn77cK/futuristic-technical-items.jpg" as="image">
+    <link rel="preload" href="https://i.postimg.cc/HnFyxbLz/futuristic-technical-item.jpg" as="image">
+</head>
+<body>
+  <!-- Header -->
+    <header class="header">
+        <div class="container">
+          <a href="index.html">
+            <div class="logo">
+                <img src="https://i.postimg.cc/MpxDcGbq/Whats-App-Image-2025-01-23-at-06-47-04-a02f3951-removebg-preview.png' border='0' alt='Whats-App-Image-2025-01-23-at-06-47-04-a02f3951-removebg-preview'/></a>" alt="AURA 2025 Logo">
+            </div>
+          </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#events">Events</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="gallery.html">Go to Gallery</a>
+
+  
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <header>
+        <h1>Event Gallery</h1>
+    </header>
+    <main>
+        <section class="carousel" aria-label="Image Carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="https://i.postimg.cc/ydY9rV5m/futuristic-exoskeleton-suit.jpg" alt="Futuristic Exoskeleton Suit" loading="lazy">
+                    <img src="https://i.postimg.cc/zvyh8xq3/technical-futuuristic-items.jpg" alt="Technical Futuristic Items" loading="lazy">
+                    <img src="https://i.postimg.cc/bJCn77cK/futuristic-technical-items.jpg" alt="Futuristic Technical Items" loading="lazy">
+                    <img src="https://i.postimg.cc/HnFyxbLz/futuristic-technical-item.jpg" alt="Futuristic Technical Item" loading="lazy">
+                </div>
+            </div>
+            <button class="prev" aria-label="Previous Slide">&#10094;</button>
+            <button class="next" aria-label="Next Slide">&#10095;</button>
+        </section>
+        <section class="gallery" aria-label="Image Gallery">
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/ydY9rV5m/futuristic-exoskeleton-suit.jpg" alt="Futuristic Exoskeleton Suit" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/zvyh8xq3/technical-futuuristic-items.jpg" alt="Technical Futuristic Items" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/bJCn77cK/futuristic-technical-items.jpg" alt="Futuristic Technical Items" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/HnFyxbLz/futuristic-technical-item.jpg" alt="Futuristic Technical Item" loading="lazy">
+            </div>
+        </section>
+    </main>
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-label">
+        <span class="close" aria-label="Close Lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged Gallery Image">
+    </div>
+    <script src="scriptg.js" defer></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./scriptg.js"></script>
+
+</body>
+</html>

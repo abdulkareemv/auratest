@@ -1,0 +1,352 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1a2e;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #0f0f1f;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+header h1 {
+  color: #e100ff;
+  font-size: 2.5rem;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Section Headings */
+h2 {
+  color: #e100ff;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Events Section */
+.event {
+  background-color: #24243e;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.event:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+.event h3 {
+  color: #7f00ff;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.event p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+.event .prizes {
+  color: #ffdd00;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.event ul {
+  padding-left: 20px;
+  color: #bbb;
+}
+.event ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #7f00ff, #e100ff);
+  text-align: center;
+  padding: 5rem 1rem;
+  color: #fff;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.hero .cta-btn {
+  background-color: #e100ff;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+.hero .cta-btn:hover {
+  background-color: #7f00ff;
+}
+@keyframes blinkEffect {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; } /* Reduce opacity for blinking effect */
+  100% { opacity: 1; }
+}
+
+.hero .date {
+  background: linear-gradient(90deg, #007bff, #8a2be2); /* Blue to Violet gradient */
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: background 0.3s;
+  animation: blinkEffect 1s infinite; /* Apply blinking animation */
+}
+
+.hero .date:hover {
+  background: linear-gradient(90deg, #0056b3, #6a1bbd); /* Darker Blue to Violet on hover */
+}
+
+/* Footer */
+footer {
+  background-color: #0f0f1f;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+footer .footer-links a {
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+footer .footer-links a:hover {
+  color: #7f00ff;
+}
+footer .social-icons a {
+  margin: 0 0.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+footer .social-icons a:hover {
+  color: #e100ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .event {
+    padding: 1rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .hero .cta-btn {
+    font-size: 1rem;
+  }
+}
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d2e;
+    color: #fff;
+}
+
+/* Competition Section */
+.competition-section {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: #1a1a2e;
+}
+.competition-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ff00ff;
+    font-weight: bold;
+}
+.competition-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+/* Competition Grid */
+.competition-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Competition Cards */
+.competition-card {
+    background-color: #222244;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.competition-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.competition-card h3 {
+    font-size: 1.8rem;
+    color: #ff00ff;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.competition-card p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 0.8rem;
+}
+.competition-card p strong {
+    color: #fff;
+}
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d2e;
+    color: #fff;
+    text-align: center;
+}
+
+/* Competition Section */
+.competition-section {
+    padding: 4rem 1rem;
+    background-color: #1a1a2e;
+}
+.competition-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ff00ff;
+    font-weight: bold;
+}
+.competition-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+/* Department Headings */
+.department-heading {
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: #ff77ff;
+    text-align: center; /* Center the department headings */
+}
+
+/* Competition Grid */
+.competition-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center; /* Center the grid within the */
+    align-items: center; /* Align tiles vertically */
+}
+
+/* Competition Cards */
+.competition-card {
+    background-color: #222244;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center; /* Center align the text inside each card */
+}
+.competition-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.competition-card h4 {
+    font-size: 1.5rem;
+    color: #ff00ff;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.competition-card p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 0.8rem;
+}
+.competition-card p strong {
+    color: #fff;
+}
+ /* Contact Section */
+.contact {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column; /* Stack elements properly */
+    align-items: center;
+}
+
+/* Container for Contact Tiles */
+.contact-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensure equal height */
+    width: 100%; /* Adjust width */
+    max-width: 900px; /* Limit max width */
+    gap: 40px; /* Space between contact tiles */
+}
+
+/* Contact Tiles */
+.contact-info, .contact-form {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: left;
+}
+
+/* Ensure both tiles are the same height */
+.contact-info {
+    max-width: 500px;
+}
+
+.contact-form {
+    max-width: 500px;
+}
+
+/* Full-Width Footer with Centered Content */
+footer {
+    width: 100%;
+    background-color: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0; /* Adjust padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Keeps it below the content */
+    margin-top: 40px; /* Space between contact section and footer */
+}
