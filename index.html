@@ -29,6 +29,7 @@
         .logo-container {
             display: none;
             text-align: center;
+            position: relative; /* Allows positioning button on top of the logo */
         }
         .loading-container {
             display: none;
@@ -49,6 +50,25 @@
         }
         .dot:nth-child(3) {
             animation-delay: 2s;
+        }
+        .enter-button {
+            display: none;
+            background-color: #FF00FF; /* Magenta */
+            color: white;
+            padding: 15px 32px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            position: absolute; /* Position the button above the logo */
+            top: -50px; /* Position the button above the logo */
+            left: 50%;
+            transform: translateX(-50%);
+            transition: background-color 0.3s;
+            z-index: 1; /* Ensure the button stays on top */
+        }
+        .enter-button:hover {
+            background-color: #D100D1; /* Darker magenta on hover */
         }
 
         @keyframes fadeIn {
@@ -83,19 +103,22 @@
         <span class="dot">.</span>
     </div>
     <div class="logo-container">
-        <img src="https://github.com/abdulkareemv/auratest/main/images/Aura%20logo%20wbg.png" alt="AURA 2K25 Logo" width="200">
+        <button class="enter-button" onclick="window.location.href='main.html'">ENTER</button>
+        <img src="https://raw.githubusercontent.com/abdulkareemv/auratest/main/images/Aura%20logo%20wbg.png" alt="AURA 2K25 Logo" width="200">
     </div>
-    
+
     <script>
         setTimeout(() => {
             document.querySelector(".intro-container").style.display = "none";
             document.querySelector(".loading-container").style.display = "block";
             document.querySelector(".logo-container").style.display = "block";
-        }, 4000);
-        
+        }, 5000);
+
+        // Show the "Enter to Main Page" button after the loading process
         setTimeout(() => {
-            window.location.href = "main.html"; // Change this to your main page
-        }, 20000); // 10 seconds total delay
+            document.querySelector(".loading-container").style.display = "none";
+            document.querySelector(".enter-button").style.display = "inline-block";
+        }, 7000); // Button shows after 7 seconds (2 seconds after loading animation starts)
     </script>
 </body>
 </html>
