@@ -350,3 +350,12 @@ footer {
     position: relative; /* Keeps it below the content */
     margin-top: 40px; /* Space between contact section and footer */
 }
+.gradient-text {
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(to right, #FFFFFF, #FFDD33, #FF1493, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-top: -10px; /* Adjust spacing */
+}
