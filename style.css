@@ -110,7 +110,7 @@ h2 {
 }
 
 .hero .date {
-  background: linear-gradient(90deg, #007bff, #8a2be2); /* Blue to Violet gradient */
+  background: linear-gradient(90deg, #00FFFF, #0000FF); /* Blue to Cyan gradient */
   color: #fff;
   padding: 0.8rem 2rem;
   border-radius: 5px;
@@ -121,8 +121,12 @@ h2 {
 }
 
 .hero .date:hover {
-  background: linear-gradient(90deg, #0056b3, #6a1bbd); /* Darker Blue to Violet on hover */
+  background: linear-gradient(90deg, #0000CC, #00CED1); /* Slightly darker Blue to Cyan on hover */
 }
+
+
+
+
 
 /* Footer */
 footer {
