@@ -34,10 +34,41 @@
             display: none;
             text-align: center;
             margin-bottom: 20px;
+            font-size: 40px;  /* Big font size */
+            font-weight: bold;
         }
+        .loading-text {
+            margin-right: 5px;
+        }
+        .dot {
+            animation: dotAnimation 1s infinite;
+            color: #FF6347; /* Initial color */
+        }
+        .dot:nth-child(2) {
+            animation-delay: 1s;
+        }
+        .dot:nth-child(3) {
+            animation-delay: 2s;
+        }
+
         @keyframes fadeIn {
             0% { opacity: 0; transform: scale(0.8); }
             100% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes dotAnimation {
+            0% {
+                color: #FF6347; /* Tomato */
+            }
+            33% {
+                color: #FFD700; /* Gold */
+            }
+            66% {
+                color: #32CD32; /* Lime Green */
+            }
+            100% {
+                color: #1E90FF; /* Dodger Blue */
+            }
         }
     </style>
 </head>
@@ -46,12 +77,14 @@
         <h1>Welcome to AURA 2K25</h1>
     </div>
     <div class="loading-container">
-        <p>Loading . . . .</p>
+        <span class="loading-text">Loading</span>
+        <span class="dot">.</span>
+        <span class="dot">.</span>
+        <span class="dot">.</span>
     </div>
     <div class="logo-container">
-    <img src="https://github.com/abdulkareemv/auratest/blob/main/images/Aura%20logo%20wbg.png" alt="AURA 2K25 Logo" width="300">
-</div>
-
+        <img src="https://raw.githubusercontent.com/abdulkareemv/auratest/main/images/Aura%20logo%20wbg.png" alt="AURA 2K25 Logo" width="200">
+    </div>
     
     <script>
         setTimeout(() => {
