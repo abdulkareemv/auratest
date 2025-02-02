@@ -57,6 +57,7 @@ h2 {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
+
 .event p {
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -359,3 +360,21 @@ footer {
     text-align: center;
     margin-top: -10px; /* Adjust spacing */
 }
+.register-button {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background: linear-gradient(to right, #ff0080, #8000ff); /* Magenta to Violet */
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .register-button:hover {
+        background: linear-gradient(to right, #8000ff, #ff0080);
+        transform: scale(1.1);
+    }
