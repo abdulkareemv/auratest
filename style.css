@@ -382,3 +382,12 @@ footer {
         background: linear-gradient(to right, #8000ff, #ff0080);
         transform: scale(1.1);
     }
+.no-style-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the text color unchanged */
+    display: inline-block; /* Ensures div behaves as expected */
+}
+
+.no-style-link:hover {
+    color: inherit; /* Prevents color change on hover */
+}
