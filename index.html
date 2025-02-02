@@ -15,15 +15,25 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: black;
+            background: linear-gradient(to right, #004D73, #0000FF);
             color: white;
             font-family: Arial, sans-serif;
             overflow: hidden;
+            flex-direction: column;
         }
         .intro-container {
             text-align: center;
             opacity: 0;
             animation: fadeIn 3s forwards;
+        }
+        .logo-container {
+            display: none;
+            text-align: center;
+        }
+        .loading-container {
+            display: none;
+            text-align: center;
+            margin-bottom: 20px;
         }
         @keyframes fadeIn {
             0% { opacity: 0; transform: scale(0.8); }
@@ -33,14 +43,25 @@
 </head>
 <body>
     <div class="intro-container">
-        <h1>Welcome to My Website</h1>
-        <p>Loading...</p>
+        <h1>Welcome to AURA 2K25</h1>
+    </div>
+    <div class="loading-container">
+        <p>Loading . . . .</p>
+    </div>
+    <div class="logo-container">
+        <img src="" alt="AURA 2K25 Logo" width="200">
     </div>
     
     <script>
         setTimeout(() => {
-            window.location.href = "home.html"; // Change this to your main page
-        }, 4000); // 4 seconds delay
+            document.querySelector(".intro-container").style.display = "none";
+            document.querySelector(".loading-container").style.display = "block";
+            document.querySelector(".logo-container").style.display = "block";
+        }, 4000);
+        
+        setTimeout(() => {
+            window.location.href = "main.html"; // Change this to your main page
+        }, 10000); // 10 seconds total delay
     </script>
 </body>
 </html>
