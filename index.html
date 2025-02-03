@@ -24,19 +24,18 @@
         .intro-container {
             text-align: center;
             opacity: 0;
-    font-size: 30px;  /* Big font size */
-            animation: fadeIn 3s forwards;
+            font-size: 30px;
+            animation: fadeIn 2s forwards;
         }
         .logo-container {
             display: none;
             text-align: center;
-            position: relative; /* Allows positioning button on top of the logo */
         }
         .loading-container {
             display: none;
             text-align: center;
             margin-bottom: 20px;
-            font-size: 40px;  /* Big font size */
+            font-size: 40px;
             font-weight: bold;
         }
         .loading-text {
@@ -44,52 +43,20 @@
         }
         .dot {
             animation: dotAnimation 1s infinite;
-            color: #FF6347; /* Initial color */
+            color: #FF6347;
         }
-        .dot:nth-child(2) {
-            animation-delay: 1s;
-        }
-        .dot:nth-child(3) {
-            animation-delay: 2s;
-        }
-        .enter-button {
-            display: none;
-            background-color: #FF00FF; /* Magenta */
-            color: white;
-            padding: 15px 32px;
-            font-size: 18px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            position: absolute; /* Position the button above the logo */
-            top: -50px; /* Position the button above the logo */
-            left: 50%;
-            transform: translateX(-50%);
-            transition: background-color 0.3s;
-            z-index: 1; /* Ensure the button stays on top */
-        }
-        .enter-button:hover {
-            background-color: #D100D1; /* Darker magenta on hover */
-        }
+        .dot:nth-child(2) { animation-delay: 0.5s; }
+        .dot:nth-child(3) { animation-delay: 1s; }
 
         @keyframes fadeIn {
             0% { opacity: 0; transform: scale(0.8); }
             100% { opacity: 1; transform: scale(1); }
         }
-
         @keyframes dotAnimation {
-            0% {
-                color: #FF6347; /* Tomato */
-            }
-            33% {
-                color: #FFD700; /* Gold */
-            }
-            66% {
-                color: #32CD32; /* Lime Green */
-            }
-            100% {
-                color: #1E90FF; /* Dodger Blue */
-            }
+            0% { color: #FF6347; }
+            33% { color: #FFD700; }
+            66% { color: #32CD32; }
+            100% { color: #1E90FF; }
         }
     </style>
 </head>
@@ -104,7 +71,6 @@
         <span class="dot">.</span>
     </div>
     <div class="logo-container">
-        <button class="enter-button" onclick="window.location.href='main.html'">ENTER</button>
         <img src="https://raw.githubusercontent.com/abdulkareemv/auratest/main/images/Aura%20logo%20wbg.png" alt="AURA 2K25 Logo" width="200">
     </div>
 
@@ -112,14 +78,16 @@
         setTimeout(() => {
             document.querySelector(".intro-container").style.display = "none";
             document.querySelector(".loading-container").style.display = "block";
+        }, 3000);
+
+        setTimeout(() => {
+            document.querySelector(".loading-container").style.display = "none";
             document.querySelector(".logo-container").style.display = "block";
         }, 5000);
 
-        // Show the "Enter to Main Page" button after the loading process
         setTimeout(() => {
-            document.querySelector(".loading-container").style.display = "none";
-            document.querySelector(".enter-button").style.display = "inline-block";
-        }, 7000); // Button shows after 7 seconds (2 seconds after loading animation starts)
+            window.location.href = "main.html"; // Auto redirect to main page
+        }, 7000);
     </script>
 </body>
 </html>
