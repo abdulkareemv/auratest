@@ -393,3 +393,23 @@ footer {
 .no-style-link:hover {
     color: inherit; /* Prevents color change on hover */
 }
+@keyframes shimmerEffect {
+    0% { background-position: -200%; }
+    50% { background-position: 200%; }
+    100% { background-position: -200%; }
+}
+
+.event-box {
+    position: relative;
+    display: block;
+    width: 100%; /* Full width */
+    text-align: center;
+    font-size: 2rem; /* Adjust text size */
+    font-weight: bold;
+    padding: 0.5rem 0; /* Reduced height */
+    color: #ffffff; /* White text */
+    background: linear-gradient(to right, #ff0080, #8000ff, #ff0080);
+    background-size: 300% 100%;
+    animation: shimmerEffect 6s infinite linear; /* Slowed down shimmering */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
