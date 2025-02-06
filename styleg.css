@@ -180,14 +180,14 @@ footer .social-icons a:hover {
 .overlay-content {
     position: absolute;
     top: 50%;
-    left: 45%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
     color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 80%;
+    width: 90%;
 }
 
 .overlay-content h2 {
@@ -206,16 +206,20 @@ footer .social-icons a:hover {
     margin-top: 10px;
 }
 
-.half-section1, .half-section2 {
+.half-section, .half-section1, .half-section2 {
     background: rgba(255, 255, 255, 0.2); /* Light transparent background */
     padding: 10px;
     border-radius: 10px;
 }
-
+.half-section {
+    width: 48%;
+    float: left;
+}
 .half-section1 {
     width: 58%;
     float: left;
 }
+
 
 .half-section2 {
     width: 38%;
@@ -338,6 +342,16 @@ footer .social-icons a:hover {
             text-align: center;
             margin-top: 15px;
         }
+  .important-info1 {
+    background-color: #FFC107; /* Amber shade for better contrast */
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 15px;
+}
+
     .event-card::before {
         content: '';
         position: absolute;
@@ -367,7 +381,7 @@ footer .social-icons a:hover {
             overflow-x: hidden;
         }
         .container {
-            max-width: 1000px;
+            max-width: 1150px;
             margin: auto;
             padding: 20px;
         }
