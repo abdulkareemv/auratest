@@ -4,138 +4,8 @@
   <meta charset="UTF-8">
   <title>AURA 2K25 Events</title>
   <link rel="stylesheet" href="./styleg.css">
- <style>
-    /* Body Styling */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #1a1a2e;
-            color: #fff;
-            line-height: 1.6;
-        }
-        /* Header */
-        .header {
-            background-color: #0f0f1f;
-            padding: 1rem 0;
-        }
-   
-        .header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-        .header .logo img {
-            width: 120px;
-        }
-   .navbar ul {
-            list-style: none;
-            display: flex;
-        }
-        .navbar ul li {
-            margin: 0 1rem;
-        }
-        .navbar ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        .navbar ul li a:hover {
-            color: #7f00ff; /* Matching gradient start color */
-        }
-
-  </style>
-</head>
-  <style>
-    .subheading {
-        font-family: 'Orbitron', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 400;
-        color: #00f7ff;
-        text-align: center;
-        margin-top: -10px;
-        opacity: 0.8;
-    }
-</style>
-
-  
-  
 
 
-
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-    
-    body {
-        font-family: 'Orbitron', sans-serif;
-        background-color: #0d0d1a;
-        color: #fff;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
-    .container {
-        max-width: 1200px;
-        margin: auto;
-        padding: 20px;
-    }
-    .event-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        padding: 20px;
-    }
-    .event-card {
-        background: linear-gradient(145deg, #1a1a3d, #12122b);
-        padding: 20px;
-        border-radius: 15px;
-        box-shadow: 0 5px 15px rgba(127, 0, 255, 0.5);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-    }
-    .event-card:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 20px rgba(127, 0, 255, 0.7);
-    }
-    .event-card h2 {
-        color: #00f7ff;
-    }
-    .prizes {
-        font-weight: bold;
-        color: #ffea00;
-    }
-    .rules {
-        margin-top: 10px;
-        font-size: 14px;
-    }
-  .important-info {
-            background-color: #ffea00;
-            color: #000;
-            font-weight: bold;
-            padding: 10px;
-            border-radius: 8px;
-            text-align: center;
-            margin-top: 15px;
-        }
-    .event-card::before {
-        content: '';
-        position: absolute;
-        width: 150%;
-        height: 150%;
-        background: radial-gradient(circle, rgba(127, 0, 255, 0.3) 10%, transparent 70%);
-        top: -50%;
-        left: -50%;
-        animation: glow 4s infinite linear;
-    }
-    @keyframes glow {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
-</style>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -198,60 +68,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AURA 2K25 Events</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
-        
-        body {
-            font-family:  'Oswald', sans-serif;
-        
-         
-            background-color: #0d0d1a;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-        .event-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-        .event-card {
-            background: linear-gradient(145deg, #1a1a3d, #12122b);
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(127, 0, 255, 0.5);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .event-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(127, 0, 255, 0.7);
-        }
-        .event-card h2 {
-            color: #00f7ff;
-        }
-        .prizes {
-            font-weight: bold;
-            color: #ffea00;
-        }
-        .rules {
-            margin-top: 10px;
-            font-size: 14px;
-  text-align: left;
-        }
-      .rules ol {
-    padding-left: 20px; /* Ensures proper indentation */
-}
-    </style>
+    
 </head>
 <body>
     <header>
@@ -260,276 +77,616 @@
   <a href="https://forms.gle/34fFnZoAEj1HznXk9
 " class="register-button" target="_blank">Register Now</a>
  </body>
-    <div class="container">
-        <div class="event-grid">
-            <div class="event-card" id="EnCode">
-                <h2>EnCode – Python Programming</h2>
-                <p>Test your programming skills and problem-solving abilities by solving coding challenges.</p>
-              <p class="prizes">🥇 1st Prize : ₹3000 </p> 
-              <p class="prizes">🥈 2nd Prize : ₹2000 </p> 
-              <p class="prizes">🥉 3rd Prize : ₹1000 </p>
-                <div class="rules">
-                    <h4>Rules & Regulations:</h4>
-                    <ol>
-                        <li>This is an individual event.</li>
-                        <li>The contest will consist of multiple rounds, with increasing difficulty levels.</li>
-                        <li>Solutions must be submitted within the given time limits.</li>
-                        <li>Plagiarism or unauthorized assistance will result in disqualification.</li>
-                        <li>Judges’ decisions will be final and binding.</li>
-                    </ol>
-                </div>
-            </div>
-         
-            <div class="event-card" id="LayEr">
-                <h2>LayEr – PCB Design</h2>
-                <p>Showcase your expertise in designing Printed Circuit Boards using KiCAD software.</p>
-              <p class="prizes">🥇 1st Prize : ₹3000 </p> 
-              <p class="prizes">🥈 2nd Prize : ₹2000 </p> 
-              <p class="prizes">🥉 3rd Prize : ₹1000 </p>
-               
-                <div class="rules">
-                    <h4>Rules & Regulations:</h4>
-                    <ol>
-                        <li>This is an individual event.</li>
-                        <li>Participants will use KiCAD software only. Other design tools are not allowed.</li>
-                        <li>PCs with the necessary software installed will be provided at the venue. Laptops are not required.</li>
-                        <li>The tasks will include schematic design and PCB layout creation.</li>
-                        <li>Evaluation criteria include design accuracy, creativity, and adherence to task requirements.</li>
-                        <li>Judges’ decisions will be final and binding.</li>
-                    </ol>
-                </div>
-            </div>
-          </div>
-      <div class="event-grid">
-            <div class="event-card" id="HobbIt">
-                <h2>HobbIt – Hobby Circuit Design</h2>
-                <p>Unleash your creativity by designing functional and innovative circuits using basic components.</p>
-              <p class="prizes">🥇 1st Prize : ₹5000 </p> 
-              <p class="prizes">🥈 2nd Prize : ₹3000 </p> 
-              <p class="prizes">🥉 3rd Prize : ₹2000 </p>
-         
-                <div class="rules">
-                    <h4>Rules & Regulations:</h4>
-                    <ol>
-                        <li>This is a team event (2 members per team).</li>
-                        <li>Participants will be provided with a set of components. External components are not allowed unless specified.</li>
-                        <li>Circuits must be built within the specified time.</li>
-                        <li>Evaluation will be based on functionality, innovation, and presentation.</li>
-                        <li>Misuse of equipment or unsafe practices will result in disqualification.</li>
-                        <li>Judges’ decisions will be final and binding.</li>
-                    </ol>
-                </div>
-            </div>
-            <div class="event-card" id="ControlZ">
-                <h2>Control Z – Reverse Engineering of Circuits</h2>
-                <p>Analyze, deconstruct, and understand systems to recreate their functionality.</p>
-              <p class="prizes">🥇 1st Prize : ₹5000 </p> 
-              <p class="prizes">🥈 2nd Prize : ₹3000 </p> 
-              
-              
-                <div class="rules">
-                    <h4>Rules & Regulations:</h4>
-                    <ol>
-                        <li>This is a team event (2 members per team).</li>
-                        <li>Teams will be given a device or mechanism to analyze and replicate.</li>
-                        <li>Tools and materials will be provided at the venue.</li>
-                        <li>Evaluation will be based on accuracy, time, and understanding demonstrated during the presentation.</li>
-                        <li>Judges’ decisions will be final and binding.</li>
-                    </ol>
+<div class="container">
+    <div class="event-grid">
+        <div class="event-card" id="EnCode">
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/abdulkareemv/auratest/main/images/encode.webp" alt="Event Image" class="event-image">
+                <div class="overlay-content">
+                    <h2>EnCode – Python Programming</h2>
+                    <p>Test your programming skills and problem-solving abilities by solving coding challenges.</p>
+                    <p class="prizes">🥇 1st Prize : ₹3000 </p> 
+                    <p class="prizes">🥈 2nd Prize : ₹2000 </p> 
+                    <p class="prizes">🥉 3rd Prize : ₹1000 </p>
+                    
+                    <!-- Event Date & Time -->
+                    <div class="event-info">
+                        <p><strong>📅 Date:</strong> February 12, 2025</p>
+                        <p><strong>⏰ Time:</strong> 10:30 AM</p>
+                    </div>
+
+                    <!-- Rules Section -->
+                    <div class="event-details">
+                        <div class="rules half-section1">
+                            <h4>Rules & Regulations:</h4>
+                            <ol>
+                                <li>This is an individual event.</li>
+                                <li>The contest will consist of multiple rounds, with increasing difficulty levels.</li>
+                                <li>Solutions must be submitted within the given time limits.</li>
+                                <li>Plagiarism or unauthorized assistance will result in disqualification.</li>
+                                <li>Judges’ decisions will be final and binding.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Contact Section -->
+                        <div class="contact half-section2">
+                            <h4>Event Coordinators:</h4>
+                            <p><strong>Fida Jasmin:</strong> 📞 8848252820</p>
+                            <p><strong>Shahma Sherin P:</strong> 📞 9188841848</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-      <div class="event-grid">
-            <div class="event-card" id="QuizTrix">
-                <h2>QuizTrix – Quiz Competition</h2>
-                <p>A challenging quiz that tests participants' knowledge in electronics, electrical systems, and technology.</p>
-              <p class="prizes">🥇 1st Prize : ₹5000 </p> 
-              <p class="prizes">🥈 2nd Prize : ₹3000 </p> 
-               
-                <div class="rules">
-                    <h4>Rules & Regulations:</h4>
-                    <ol>
-    <li>This is a team event (2 members per team).</li>
-    <li>Multiple teams can participate from a single college.</li>
-    <li>The quiz will include multiple rounds with elimination at each stage.</li>
-    <li>Tie-breaker rounds will be conducted if required.</li>
-    <li>Judges’ decisions will be final and binding.</li>
-</ol>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="event-grid">
+        <div class="event-card" id="LayEr">
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/abdulkareemv/auratest/main/images/layer.webp" alt="Event Image" class="event-image">
+                <div class="overlay-content">
+                    <h2>LayEr – PCB Design</h2>
+                    <p>Showcase your expertise in designing Printed Circuit Boards using KiCAD software.</p>
+                    <p class="prizes">🥇 1st Prize : ₹3000 </p> 
+                    <p class="prizes">🥈 2nd Prize : ₹2000 </p> 
+                    <p class="prizes">🥉 3rd Prize : ₹1000 </p>
+
+                    <!-- Event Date & Time -->
+                    <div class="event-info">
+                        <p><strong>📅 Date:</strong> February 15, 2025</p>
+                        <p><strong>⏰ Time:</strong> 11:00 AM</p>
+                    </div>
+
+                    <!-- Rules Section -->
+                    <div class="event-details">
+                        <div class="rules half-section1">
+                            <h4>Rules & Regulations:</h4>
+                            <ol>
+                                <li>This is an individual event.</li>
+                                <li>Participants will use KiCAD software only. Other design tools are not allowed.</li>
+                                <li>PCs with the necessary software installed will be provided at the venue. Laptops are not required.</li>
+                                <li>The tasks will include schematic design and PCB layout creation.</li>
+                                <li>Evaluation criteria include design accuracy, creativity, and adherence to task requirements.</li>
+                                <li>Judges’ decisions will be final and binding.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Contact Section -->
+                        <div class="contact half-section2">
+                            <h4>Event Coordinators:</h4>
+                            <p><strong>John Doe:</strong> 📞 1234567890</p>
+                            <p><strong>Jane Smith:</strong> 📞 0987654321</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="event-card" id="RoboBolt">
-    <h2>RoboBolt – Robotic Race</h2>
-    <p>Design a line-following robot to navigate through a challenging track with precision and speed.</p>
-              <p class="prizes">🥇 1st Prize : ₹6000 </p> 
-              <p class="prizes">🥈 2nd Prize : ₹4000 </p> 
-              <p class="prizes">🥉 3rd Prize : ₹2000 </p>
-    <div class="rules">
-        <h4>Rules & Regulations:</h4>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="event-grid">
+        
+        <!-- HobbIt – Hobby Circuit Design -->
+        <div class="event-card" id="HobbIt">
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/abdulkareemv/auratest/main/images/hobbit.webp" alt="Event Image" class="event-image">
+                <div class="overlay-content">
+                    <h2>HobbIt – Hobby Circuit Design</h2>
+                    <p>Unleash your creativity by designing functional and innovative circuits using basic components.</p>
+                    <p class="prizes">🥇 1st Prize : ₹5000 </p> 
+                    <p class="prizes">🥈 2nd Prize : ₹3000 </p> 
+                    <p class="prizes">🥉 3rd Prize : ₹2000 </p>
+
+                    <!-- Event Date & Time -->
+                    <div class="event-info">
+                        <p><strong>📅 Date:</strong> February 20, 2025</p>
+                        <p><strong>⏰ Time:</strong> 9:00 AM</p>
+                    </div>
+
+                    <!-- Rules Section -->
+                    <div class="event-details">
+                        <div class="rules half-section1">
+                            <h4>Rules & Regulations:</h4>
+                            <ol>
+                                <li>This is a team event (2 members per team).</li>
+                                <li>Participants will be provided with a set of components. External components are not allowed unless specified.</li>
+                                <li>Circuits must be built within the specified time.</li>
+                                <li>Evaluation will be based on functionality, innovation, and presentation.</li>
+                                <li>Misuse of equipment or unsafe practices will result in disqualification.</li>
+                                <li>Judges’ decisions will be final and binding.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Contact Section -->
+                        <div class="contact half-section2">
+                            <h4>Event Coordinators:</h4>
+                            <p><strong>Mark Henry:</strong> 📞 9876543210</p>
+                            <p><strong>Rachel Green:</strong> 📞 1230987654</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+  <div class="event-grid">
+
+        <!-- Control Z – Reverse Engineering of Circuits -->
+        <div class="event-card" id="ControlZ">
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/abdulkareemv/auratest/main/images/controlz.webp" alt="Event Image" class="event-image">
+                <div class="overlay-content">
+                    <h2>Control Z – Reverse Engineering of Circuits</h2>
+                    <p>Analyze, deconstruct, and understand systems to recreate their functionality.</p>
+                    <p class="prizes">🥇 1st Prize : ₹5000 </p> 
+                    <p class="prizes">🥈 2nd Prize : ₹3000 </p> 
+
+                    <!-- Event Date & Time -->
+                    <div class="event-info">
+                        <p><strong>📅 Date:</strong> February 22, 2025</p>
+                        <p><strong>⏰ Time:</strong> 1:00 PM</p>
+                    </div>
+
+                    <!-- Rules Section -->
+                    <div class="event-details">
+                        <div class="rules half-section1">
+                            <h4>Rules & Regulations:</h4>
+                            <ol>
+                                <li>This is a team event (2 members per team).</li>
+                                <li>Teams will be given a device or mechanism to analyze and replicate.</li>
+                                <li>Tools and materials will be provided at the venue.</li>
+                                <li>Evaluation will be based on accuracy, time, and understanding demonstrated during the presentation.</li>
+                                <li>Judges’ decisions will be final and binding.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Contact Section -->
+                        <div class="contact half-section2">
+                            <h4>Event Coordinators:</h4>
+                            <p><strong>Chris Evans:</strong> 📞 3456789012</p>
+                            <p><strong>Emma Watson:</strong> 📞 5678901234</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="event-grid">
+        
+        <!-- QuizTrix – Quiz Competition -->
+        <div class="event-card" id="QuizTrix">
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/abdulkareemv/auratest/main/images/quiztrix.webp" alt="Event Image" class="event-image">
+                <div class="overlay-content">
+                    <h2>QuizTrix – Quiz Competition</h2>
+                    <p>A challenging quiz that tests participants' knowledge in electronics, electrical systems, and technology.</p>
+                    <p class="prizes">🥇 1st Prize : ₹5000 </p> 
+                    <p class="prizes">🥈 2nd Prize : ₹3000 </p> 
+
+                    <!-- Event Date & Time -->
+                    <div class="event-info">
+                        <p><strong>📅 Date:</strong> March 5, 2025</p>
+                        <p><strong>⏰ Time:</strong> 11:00 AM</p>
+                    </div>
+
+                    <!-- Rules Section -->
+                    <div class="event-details">
+                        <div class="rules half-section1">
+                            <h4>Rules & Regulations:</h4>
+                            <ol>
+                                <li>This is a team event (2 members per team).</li>
+                                <li>Multiple teams can participate from a single college.</li>
+                                <li>The quiz will include multiple rounds with elimination at each stage.</li>
+                                <li>Tie-breaker rounds will be conducted if required.</li>
+                                <li>Judges’ decisions will be final and binding.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Contact Section -->
+                        <div class="contact half-section2">
+                            <h4>Event Coordinators:</h4>
+                            <p><strong>John Doe:</strong> 📞 6789345678</p>
+                            <p><strong>Jane Smith:</strong> 📞 9876543210</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+            <div class="container">
+    <div class="event-grid">
+        
+        <!-- RoboBolt – Robotic Race -->
+        <div class="event-card" id="RoboBolt">
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/abdulkareemv/auratest/main/images/roborace.webp" alt="Event Image" class="event-image">
+                <div class="overlay-content">
+                    <h2>RoboBolt – Robotic Race</h2>
+                    <p>Design a line-following robot to navigate through a challenging track with precision and speed.</p>
+                    <p class="prizes">🥇 1st Prize : ₹6000 </p> 
+                    <p class="prizes">🥈 2nd Prize : ₹4000 </p> 
+                    <p class="prizes">🥉 3rd Prize : ₹2000 </p>
+
+                    <!-- Event Date & Time -->
+                    <div class="event-info">
+                        <p><strong>📅 Date:</strong> March 15, 2025</p>
+                        <p><strong>⏰ Time:</strong> 1:00 PM</p>
+                    </div>
+
+                    <!-- Rules Section -->
+                    <div class="event-details">
+                        <div class="rules half-section1">
+                            <h4>Rules & Regulations:</h4>
+                            <ol>
+                                <li>This is a team event (up to 3 members per team).</li>
+                                <li>Robots must be pre-built and adhere to the following specifications:
+                                    <ul>
+                                        <li>Maximum of 8 sensors in the array.</li>
+                                        <li>Line-following capabilities are mandatory.</li>
+                                    </ul>
+                                </li>
+                                <li>The track will include sharp turns, intersections, and speed challenges.</li>
+                                <li>Points will be awarded based on speed, accuracy in following the line, and obstacle handling.</li>
+                                <li>Any attempt to manually interfere with the robot during the race will lead to disqualification.</li>
+                                <li>Judges’ decisions will be final and binding.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Contact Section -->
+                        <div class="contact half-section2">
+                            <h4>Event Coordinators:</h4>
+                            <p><strong>Ali Khan:</strong> 📞 9898765432</p>
+                            <p><strong>Rahul Verma:</strong> 📞 9876543210</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <div class="container">
+    <div class="event-grid">
+        
+        <!-- Oracy – Best Manager -->
+        <div class="event-card" id="Oracy">
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/abdulkareemv/auratest/main/images/oracy.webp" alt="Event Image" class="event-image">
+                <div class="overlay-content">
+                    <h2>Oracy - Best Manager</h2>
+                    <p>We explore the qualities that define exceptional managers: adept communication, strategic vision, empathy, and the ability to inspire teams.</p>
+                    <p class="prizes">🥇 1st Prize : ₹5000 </p> 
+                    <p class="prizes">🥈 2nd Prize : ₹3000 </p> 
+                    <p class="prizes">🥉 3rd Prize : ₹2000 </p>
+                    
+                    <!-- Event Date & Time -->
+                    <div class="event-info">
+                        <p><strong>📅 Date:</strong> March 22, 2025</p>
+                        <p><strong>⏰ Time:</strong> 10:00 AM</p>
+                    </div>
+
+                    <!-- Rules Section -->
+                    <div class="event-details">
+                        <div class="rules half-section1">
+                            <h4>Rules & Regulations:</h4>
+                            <ol>
+                                <li>This event is an individual contest.</li>
+                                <li>There will be 3 rounds of competition for judgment.</li>
+                                <li>Participants must score above the cutoff point in each round.</li>
+                                <li>Professional attire or college uniforms are mandatory.</li>
+                                <li>Judges' decision will be final and binding.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Contact Section -->
+                        <div class="contact half-section2">
+                            <h4>Event Coordinators:</h4>
+                            <p><strong>Shreya Kapoor:</strong> 📞 9876543210</p>
+                            <p><strong>Amit Sharma:</strong> 📞 9123456789</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+      
+      
+        <div class="container">
+    <div class="event-grid">
+        
+        <!-- Quizty – Business Quiz -->
+        <div class="event-card" id="Quizty">
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/abdulkareemv/auratest/main/images/quizty.webp" alt="Event Image" class="event-image">
+                <div class="overlay-content">
+                    <h2>Quizty – Business Quiz</h2>
+                    <p>Event that tests participants' knowledge and understanding of various aspects related to the business world.</p>
+                    <p class="prizes">🥇 1st Prize : ₹5000 </p> 
+                    <p class="prizes">🥈 2nd Prize : ₹3000 </p> 
+                    <p class="prizes">🥉 3rd Prize : ₹2000 </p>
+                    
+                    <!-- Event Date & Time -->
+                    <div class="event-info">
+                        <p><strong>📅 Date:</strong> March 25, 2025</p>
+                        <p><strong>⏰ Time:</strong> 12:00 PM</p>
+                    </div>
+
+                    <!-- Rules Section -->
+                    <div class="event-details">
+                        <div class="rules half-section1">
+                            <h4>Rules & Regulations:</h4>
+                            <ol>
+                                <li>Team event with 2 members per team.</li>
+                                <li>Unlimited number of teams per college.</li>
+                                <li>Quiz rules and point system will be announced on-site.</li>
+                                <li>Tie-breaker round will be conducted if necessary.</li>
+                                <li>Judges' decision will be final and binding.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Contact Section -->
+                        <div class="contact half-section2">
+                            <h4>Event Coordinators:</h4>
+                            <p><strong>Rita Sharma:</strong> 📞 9786532101</p>
+                            <p><strong>Vikram Patel:</strong> 📞 9876543211</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+      <div class="container">
+    <div class="event-grid">
+        
+        <!-- C Fresh – C Programming -->
+        <div class="event-card" id="CFresh">
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/abdulkareemv/auratest/main/images/cfresh.webp" alt="Event Image" class="event-image">
+                <div class="overlay-content">
+                    <h2>C Fresh – C Programming</h2>
+                    <p>Assess participants' problem-solving skills, logical thinking, and programming abilities.</p>
+                    <p class="prizes">🥇 1st Prize : ₹3000 </p> 
+                    <p class="prizes">🥈 2nd Prize : ₹2000 </p> 
+                    <p class="prizes">🥉 3rd Prize : ₹1000 </p>
+                    
+                    <!-- Event Date & Time -->
+                    <div class="event-info">
+                        <p><strong>📅 Date:</strong> March 15, 2025</p>
+                        <p><strong>⏰ Time:</strong> 11:00 AM</p>
+                    </div>
+
+                    <!-- Rules Section -->
+                    <div class="event-details">
+                        <div class="rules half-section1">
+                            <h4>Rules & Regulations:</h4>
+                            <ol>
+                                <li>Individual contest.</li>
+                                <li>Multiple rounds competition.</li>
+                                <li>Time limit applies.</li>
+                                <li>Clarifications can be requested from judges.</li>
+                                <li>Unauthorized behavior leads to disqualification.</li>
+                                <li>In case of a tie, the submission time will be considered.</li>
+                                <li>Judges' decision is final.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Contact Section -->
+                        <div class="contact half-section2">
+                            <h4>Event Coordinators:</h4>
+                            <p><strong>Arun Kannan:</strong> 📞 9812345678</p>
+                            <p><strong>Rina Mehta:</strong> 📞 9876543210</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="event-grid">
+        
+        <!-- Jigsaw – Puzzle Game -->
+        <div class="event-card" id="Jigsaw">
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/abdulkareemv/auratest/main/images/jigsaw.webp" alt="Event Image" class="event-image">
+                <div class="overlay-content">
+                    <h2>Jigsaw – Puzzle Game</h2>
+                    <p>Focuses on solving problems, challenges, or enigmas through logical thinking, pattern recognition, and strategic planning.</p>
+                    <p class="prizes">🥇 1st Prize : ₹3000 </p> 
+                    <p class="prizes">🥈 2nd Prize : ₹2000 </p> 
+                    <p class="prizes">🥉 3rd Prize : ₹1000 </p>
+                    
+                    <!-- Event Date & Time -->
+                    <div class="event-info">
+                        <p><strong>📅 Date:</strong> March 25, 2025</p>
+                        <p><strong>⏰ Time:</strong> 2:00 PM</p>
+                    </div>
+
+                    <!-- Rules Section -->
+                    <div class="event-details">
+                        <div class="rules half-section1">
+                            <h4>Rules & Regulations:</h4>
+                            <ol>
+                                <li>Team event with 2 members per team.</li>
+                                <li>Time-bound competition, with limits announced at the event.</li>
+                                <li>Event consists of 2 rounds.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Contact Section -->
+                        <div class="contact half-section2">
+                            <h4>Event Coordinators:</h4>
+                            <p><strong>Simran Roy:</strong> 📞 9876543210</p>
+                            <p><strong>Vikram Singh:</strong> 📞 9123456789</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container" style="overflow: hidden;">
+    <div class="event-grid" style="min-height: 400px;">
+        
+        <!-- RoboSoccer -->
+        <div class="event-card" id="RoboSoccer" style="height: auto;">
+            <div class="image-container" style="overflow: hidden; height: 100%;">
+                <img src="https://raw.githubusercontent.com/abdulkareemv/auratest/main/images/robo soccer.webp" alt="RoboSoccer Event Image" class="event-image" style="height: 100%; width: 100%; object-fit: contain;">
+               
+               <div class="overlay-content">
+                    <h2>RoboSoccer</h2>
+                    <p>Get ready for the ultimate robotic showdown! RoboSoccer brings together innovative minds to design, build, and battle their own robots. Join us as teams or individual students for a thrilling display of technological prowess and strategic skill.</p>
+                    <p class="prizes">🥇 1st Prize: ₹6000</p>
+                    <p class="prizes">🥈 2nd Prize: ₹4000</p>
+
+                    <!-- Event Date & Time -->
+                    <div class="event-info">
+                        <p><strong>📅 Date:</strong> March 26, 2025</p>
+                        <p><strong>⏰ Time:</strong> 4:00 PM</p>
+                    </div>
+
+                    <!-- Rules Section -->
+<div class="event-details">
+    <!-- Game Rules Section -->
+    <div class="rules half-section1">
+        <h4>Game Rules:</h4>
         <ol>
-            <li>This is a team event (up to 3 members per team).</li>
-            <li>Robots must be pre-built and adhere to the following specifications:
-                <ul>
-                    <li>Maximum of 8 sensors in the array.</li>
-                    <li>Line-following capabilities are mandatory.</li>
-                </ul>
-            </li>
-            <li>The track will include sharp turns, intersections, and speed challenges.</li>
-            <li>Points will be awarded based on speed, accuracy in following the line, and obstacle handling.</li>
-            <li>Any attempt to manually interfere with the robot during the race will lead to disqualification.</li>
+            <li>Only one ball will be placed at the center, robots are initially placed at their respective goal posts.</li>
+            <li>Time limit is 3 minutes.</li>
+            <li>Participants should hit the ball into the opponent's goal to score points.</li>
+            <li>Each participant can score as many goals within the limited time.</li>
+            <li>Event can be individual or in group (All group members need to register individually for getting a certificate).</li>
             <li>Judges’ decisions will be final and binding.</li>
         </ol>
     </div>
-</div>
- </div>
-    <div class="event-grid">
-        <div class="event-card" id="Oracy">
-            <h2>Oracy - Best Manager</h2>
-            <p>We explore the qualities that define exceptional managers: adept communication, strategic vision, empathy, and the ability to inspire teams.</p>
-              <p class="prizes">🥇 1st Prize : ₹5000 </p> 
-              <p class="prizes">🥈 2nd Prize : ₹3000 </p> 
-              <p class="prizes">🥉 3rd Prize : ₹2000 </p>
-           
-            <div class="rules">
-                <h4>Rules & Regulations:</h4>
-                <ol>
-                    <li>This event is an individual contest.</li>
-                    <li>There will be 3 rounds of competition for judgment.</li>
-                    <li>Participants must score above the cutoff point in each round.</li>
-                    <li>Professional attire or college uniforms are mandatory.</li>
-                    <li>Judges' decision will be final and binding.</li>
-                </ol>
-            </div>
-        </div>
-      
-      
-      
-        <div class="event-card" id="Quizty">
-            <h2>Quizty – Business Quiz</h2>
-            <p>Event that tests participants' knowledge and understanding of various aspects related to the business world.</p>
-              <p class="prizes">🥇 1st Prize : ₹5000 </p> 
-              <p class="prizes">🥈 2nd Prize : ₹3000 </p> 
-              <p class="prizes">🥉 3rd Prize : ₹2000 </p>
-           
-          <div class="rules">
-                <h4>Rules & Regulations:</h4>
-                <ol>
-                    <li>Team event with 2 members per team.</li>
-                    <li>Unlimited number of teams per college.</li>
-                    <li>Quiz rules and point system will be announced on-site.</li>
-                    <li>Tie-breaker round will be conducted if necessary.</li>
-                    <li>Judges' decision will be final and binding.</li>
-                </ol>
-            </div>
-        </div>
-      </div>
-      <div class="event-grid">
-        <div class="event-card" id="CFresh">
-            <h2>C Fresh - C Programming</h2>
-            <p>Assess participants' problem-solving skills, logical thinking, and programming abilities.</p>
-              <p class="prizes">🥇 1st Prize : ₹3000 </p> 
-              <p class="prizes">🥈 2nd Prize : ₹2000 </p> 
-              <p class="prizes">🥉 3rd Prize : ₹1000 </p>
-            
-            <div class="rules">
-                <h4>Rules & Regulations:</h4>
-                <ol>
-                    <li>Individual contest.</li>
-                    <li>Multiple rounds competition.</li>
-                    <li>Time limit applies.</li>
-                    <li>Clarifications can be requested from judges.</li>
-                    <li>Unauthorized behavior leads to disqualification.</li>
-                    <li>In case of a tie, the submission time will be considered.</li>
-                    <li>Judges' decision is final.</li>
-                </ol>
-            </div>
-        </div>
-        <div class="event-card" id="Jigsaw">
-            <h2>Jigsaw - Puzzle Game</h2>
-            <p>Focuses on solving problems, challenges, or enigmas through logical thinking, pattern recognition, and strategic planning.</p>
-              <p class="prizes">🥇 1st Prize : ₹3000 </p> 
-              <p class="prizes">🥈 2nd Prize : ₹2000 </p> 
-              <p class="prizes">🥉 3rd Prize : ₹1000 </p>
-            
-            <div class="rules">
-                <h4>Rules & Regulations:</h4>
-                <ol>
-                    <li>Team event with 2 members per team.</li>
-                    <li>Time-bound competition, with limits announced at the event.</li>
-                    <li>Event consists of 2 rounds.</li>
-                </ol>
-            </div>
-        </div>
-    </div>
 
-        <div class="event-grid">
-            <div class="event-card" id="RoboSoccer">
-                <h2>RoboSoccer</h2>
-                <p>Get ready for the ultimate robotic showdown! RoboSoccer, brings together innovative minds to design, build, and battle their own robots. Join us as teams or individual students for a thrilling display of technological prowess and strategic skill.</p>
-              <p class="prizes">🥇 1st Prize : ₹6000 </p> 
-              <p class="prizes">🥈 2nd Prize : ₹4000 </p> 
-              
-                <div class="rules">
-                    <h4>Game Rule:</h4>
-                    <ol>
-                        <li>Only one ball will be placed at the center, robots are initially placed at their respective goal posts.</li>
-                        <li>Time limit is 3 minutes. </li>
-                        <li>Participants should hit the ball into the opponent's goal to score points.</li>
-                        <li>Each participant can make as many as goals in the limited time. </li>
-                        <li>Event can be individual or in group (All group members need to register individual for getting certificate). </li>
-                        <li>Judges’ decisions will be final and binding.</li>
-  <h4>Robot Specifications:</h4>
+    <!-- Robot Specifications Section -->
+    <div class="rules half-section2">
+        <h4>Robot Specifications:</h4>
         <ul>
             <li>Robot size must not exceed 25cm*20cm*15cm.</li>
             <li>Maximum weight: 3kg.</li>
         </ul>
+    </div>
+</div>
+<br>
+                          
+                          <!-- Rules & Contact Section -->
+<div class="event-details">
+    <!-- Rules & Regulations Section -->
+    <div class="rules half-section1">
         <h4>Rules & Regulations:</h4>
         <ol>
             <li>Team can have a maximum of four members.</li>
-            <li>Only one participant should control the robot; no player can be exchanged in the middle of the match.</li>
+            <li>Only one participant should control the robot; no player can be exchanged during the match.</li>
             <li>A robot can push or hit the ball but cannot withhold or grab it.</li>
             <li>Human interference (e.g., touching the robot) during the game is not allowed.</li>
-            <li>Decision of the Judges and Event Organizers shall be treated as final and binding on all and cannot be contested.</li>
-            <li>The event coordinator is the match referee. He takes all the decisions and participants have to abide by it.</li>
-            <li>No power supply will be provided at the sight of play.</li>
-            <li>Coordinators reserve the right to ask for the explanation of the robot. The coordinator can change the rules of the game depending on the situation.</li>
-            <li>Rules & Regulations may change without prior notice, by the Event organizers.</li>
+            <li>Decision of the Judges and Event Organizers shall be treated as final and binding and cannot be contested.</li>
+            <li>The event coordinator is the match referee. Participants must abide by his decisions.</li>
+            <li>No power supply will be provided at the site of play.</li>
+            <li>Coordinators reserve the right to ask for an explanation of the robot. The coordinator can change the rules depending on the situation.</li>
+            <li>Rules & Regulations may change without prior notice by the Event organizers.</li>
             <li>Positions of the ball in the arena will be decided by the organizers on the particular day of the event.</li>
-                      
-                    </ol>
-                </div>
-            </div>
-            <div class="event-card" id="HeatNBeat">
-                <h2>HEAT N BEAT- Soldering Competition</h2>
-                <p>Put your soldering skills to the test at HEAT N BEAT!
+        </ol>
+    </div>
 
-Join us for an electrifying soldering competition where participants will be challenged to assemble and solder electronic circuits within a limited timeframe.</p>
-              <p class="prizes">🥇 1st Prize : ₹3000 </p> 
-              <p class="prizes">🥈 2nd Prize : ₹2000 </p>
-              <p class="prizes">🥉 3rd Prize : ₹1000 </p>
-             
-                <div class="rules">
+    <!-- Contact Section -->
+    <div class="contact-details half-section2">
+        <h4>Event Coordinators:</h4>
+        <p><strong>Simran Roy:</strong> 📞 9876543210</p>
+        <p><strong>Vikram Singh:</strong> 📞 9123456789</p>
+    </div>
+</div>
+
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+     
+ 
+<div class="container" style="overflow: hidden;">
+    <div class="event-grid" style="min-height: 400px;">
+        
+           <div class="event-card" id="HeatNBeat" style="height: auto;">
+            <div class="image-container" style="overflow: hidden; height: 100%;">
+    
+        <img src="https://raw.githubusercontent.com/abdulkareemv/auratest/main/images/heatnbeat.webp" alt="Heat N Beat Image" class="event-image" style="height: 100%; width: 100%; object-fit: contain;">
+        <div class="overlay-content">
+            <h2>HEAT N BEAT - Soldering Competition</h2>
+            <p>Put your soldering skills to the test at HEAT N BEAT! Join us for an electrifying soldering competition where participants will be challenged to assemble and solder electronic circuits within a limited timeframe.</p>
+
+            <p class="prizes">🥇 1st Prize: ₹3000 </p> 
+            <p class="prizes">🥈 2nd Prize: ₹2000 </p> 
+            <p class="prizes">🥉 3rd Prize: ₹1000 </p>
+
+            <!-- Event Date & Time -->
+            <div class="event-info">
+                <p><strong>📅 Date:</strong> March 25, 2025</p>
+                <p><strong>⏰ Time:</strong> 3:00 PM</p>
+            </div>
+
+            <!-- Rules & Regulations Section -->
+            <div class="event-details">
+                <!-- Rules Section -->
+                <div class="rules half-section1">
                     <h4>Rules & Regulations:</h4>
                     <ol>
                         <li>Open to all.</li>
-            <li>Each participant will be given a dotted PCB and must solder the given circuit according to the problem statement.</li>
-            <li>Circuit components and PCB will be provided.</li>
-            <li>All other items (e.g., soldering iron, solder stand, tools) should be arranged by contestants.</li>
-            <li>Safety precautions should be taken by each participant.</li>
-            <li>Registration is mandatory.</li>
-            <li>Each participant has to solder the circuits according to the given specification within the given duration (1 hour).</li>
-            
-                      <li>Mark distribution:
-                <ul>
-                    <li>Soldering – 50%</li>
-                    <li>Placing of components – 25%</li>
-                    <li>Output – 25%</li>
-                </ul>
-            </li>
-            <li>Decision of the judging panel will be final.</li>
+                        <li>Each participant will be given a dotted PCB and must solder the given circuit according to the problem statement.</li>
+                        <li>Circuit components and PCB will be provided.</li>
+                        <li>All other items (e.g., soldering iron, solder stand, tools) should be arranged by contestants.</li>
+                        <li>Safety precautions should be taken by each participant.</li>
+                        <li>Registration is mandatory.</li>
+                        <li>Each participant has to solder the circuits according to the given specification within the given duration (1 hour).</li>
+                        <li>Mark distribution:
+                            <ul>
+                                <li>Soldering – 50%</li>
+                                <li>Placing of components – 25%</li>
+                                <li>Output – 25%</li>
+                            </ul>
+                        </li>
+                        <li>Decision of the judging panel will be final.</li>
                     </ol>
                 </div>
+
+                <!-- Contact Section -->
+                <div class="contact-details half-section2">
+                    <h4>Event Coordinators:</h4>
+                    <p><strong>Simran Roy:</strong> 📞 9876543210</p>
+                    <p><strong>Vikram Singh:</strong> 📞 9123456789</p>
+                </div>
             </div>
-           </div>
+        </div>
+    </div>
+</div>
+      </div>
+</div>
+
            <div class="event-grid">
             <div class="event-card" id="Ideathon">
                 <h2>IDEATHON 💡</h2>
@@ -604,29 +761,3 @@ Pitch your innovative ideas, demonstrate your prototypes, and convince our exper
 </html>         
 
     
-<style>
-    .subheading {
-        font-family: 'Orbitron', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 400;
-        color: #00f7ff;
-        text-align: center;
-        margin-top: -10px;
-        opacity: 0.8;
-    }
-
-    .subheading-ecel {
-        font-family: 'Orbitron', sans-serif;
-        font-size: 1.8rem;
-        font-weight: 700;
-        color: #ffea00;
-        text-align: center;
-        margin-top: 15px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-</style>
-
-
-  
-      
