@@ -47,6 +47,21 @@ body {
 .navbar a:hover {
   color: #60a5fa;
 }
+.subtitle {
+  margin-top: 1.2rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  background: linear-gradient(
+    90deg,
+    #94a3b8,
+    #60a5fa,
+    #a78bfa
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 18px rgba(96,165,250,0.25);
+}
 
 /* ================= HERO ================= */
 .hero {
@@ -99,8 +114,9 @@ body {
 
 /* OUTER ROTATING TEXT */
 .outer-circle text {
+  filter: drop-shadow(0 0 14px rgba(124,58,237,0.8));
   fill: #e8f1ff;
-  font-size:40px;   /* ← increased */
+  font-size:45px;   /* ← increased */
   letter-spacing: 3px;
   text-transform: uppercase;
   filter: drop-shadow(0 0 6px rgba(180,210,255,0.6));
@@ -122,6 +138,25 @@ body {
   justify-content: center;
   align-items: center;
   animation: pulse 3.2s ease-in-out infinite;
+}
+/* INNER CIRCLE */
+.inner-circle {
+  position: absolute;
+  inset: 38px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #0f172a 0%, #020617 75%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;        /* 🔑 keeps logo inside */
+}
+
+/* LOGO FIT */
+.inner-logo {
+  width: 100%;              /* perfect balance */
+  height: 100%;
+  object-fit: contain;     /* keeps logo ratio */
+  display: block;
 }
 
 /* INNER TEXT */
