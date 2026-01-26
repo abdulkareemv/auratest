@@ -112,6 +112,7 @@ body {
 }
 
 /* ================= WHEEL ================= */
+
 .wheel-center {
   display: flex;
   justify-content: center;
@@ -123,6 +124,7 @@ body {
   width: 220px;
   height: 220px;
 }
+
 
 .outer-circle {
   position: absolute;
@@ -147,6 +149,13 @@ body {
   overflow: hidden;
 }
 
+ 
+
+/* ================= ANIMATIONS ================= */
+@keyframes rotate {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}
 .inner-logo {
   width: 100%;
   animation: zoomPulse 5s cubic-bezier(0.4,0,0.2,1) infinite;
