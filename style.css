@@ -340,16 +340,21 @@ body {
   }
 
   .circle-wrapper {
-    width: 160px;
-    height: 160px;
+    width: 190px;   /* ⬅ increased */
+    height: 190px;
   }
 
   .inner-circle {
-    inset: 26px;
+    inset: 30px;    /* keeps logo centered */
+  }
+
+  .inner-logo {
+    width: 95%;
   }
 
   .outer-circle text {
-    font-size: 30px;
+    font-size: 34px;  /* clearer on phones */
+    letter-spacing: 2px;
   }
 }
 
