@@ -348,7 +348,11 @@ body {
     font-size: 1.3rem;
     line-height: 1.9;
   }
-
+@media (max-width: 768px) {
+  .about {
+    padding: 3rem 1.25rem;
+  }
+}
 .about-features {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Desktop: 4 cards */
