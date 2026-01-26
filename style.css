@@ -453,22 +453,11 @@ body {
       rgba(26,26,46,0.85)
     );
 
-
     border: 1px solid rgba(139, 92, 246, 0.35);
-    animation: mobileGlow 4s ease-in-out infinite;
+
   }
 }
 
-@keyframes mobileGlow {
-  0%, 100% {
-    transform: translateY(0);
-    box-shadow: 0 0 20px rgba(139, 92, 246, 0.25);
-  }
-  50% {
-    transform: translateY(-6px);
-    box-shadow: 0 0 35px rgba(217, 70, 239, 0.45);
-  }
-}
 @media (max-width: 768px) {
   .feature-card:nth-child(1) { animation-delay: 0s; }
   .feature-card:nth-child(2) { animation-delay: 1s; }
@@ -579,7 +568,7 @@ body {
 /* Divider before footer */
 .footer-divider {
   height: 1px;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 
   background: linear-gradient(
@@ -692,35 +681,3 @@ body {
   .hero h1 {
     font-size: 2.8rem;
   }
-
-  .circle-wrapper {
-    width: 190px;   /* ⬅ increased */
-    height: 190px;
-  }
-
-  .inner-circle {
-    inset: 30px;    /* keeps logo centered */
-  }
-
-  .inner-logo {
-    width: 95%;
-  }
-
-  .outer-circle text {
-    font-size: 34px;  /* clearer on phones */
-    letter-spacing: 2px;
-  }
-}
-
-/* ================= ANIMATIONS ================= */
-@keyframes rotate {
-  from { transform: rotate(0); }
-  to { transform: rotate(360deg); }
-}
-
-
-
-@keyframes glow {
-  from { text-shadow: 0 0 20px rgba(56,189,248,0.3); }
-  to { text-shadow: 0 0 40px rgba(139,92,246,0.6); }
-}
