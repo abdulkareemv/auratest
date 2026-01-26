@@ -453,9 +453,6 @@ body {
       rgba(26,26,46,0.85)
     );
 
-    box-shadow:
-      0 0 30px rgba(139, 92, 246, 0.45),
-      0 0 60px rgba(236, 72, 153, 0.25);
 
     border: 1px solid rgba(139, 92, 246, 0.35);
     animation: mobileGlow 4s ease-in-out infinite;
