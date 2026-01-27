@@ -36,7 +36,7 @@ body {
 }
 
 .logo span {
-  background: linear-gradient(90deg, #38bdf8, #8b5cf6);
+  background: linear-gradient(90deg, #22d3ee, #38bdf8, #8b5cf6, #ec4899);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -98,7 +98,7 @@ body {
 }
 
 .hero h1 span {
-  background: linear-gradient(90deg, #38bdf8, #8b5cf6);
+  background: linear-gradient(90deg, #22d3ee, #38bdf8, #8b5cf6, #ec4899);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -106,7 +106,7 @@ body {
 .subtitle {
   margin-top: 1.2rem;
   font-size: 1.35rem;
-  background: linear-gradient(90deg,#94a3b8,#60a5fa,#a78bfa);
+  background: linear-gradient(90deg,#94a3b8,#60a5fa,#8b5cf6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -173,8 +173,14 @@ body {
 }
 /* ================= TEXT ================= */
 .tagline {
-  margin: 1.8rem 0;
-  color: #60a5fa;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+.tagline span {
+  background: linear-gradient(90deg, #38bdf8, #8b5cf6, #ec4899);
+  font-size: 1.2rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .desc {
@@ -266,36 +272,29 @@ body {
 
 /* ================= BUTTON ================= */
 .btn-primary {
-  display: inline-block;   /* 🔥 REQUIRED for transform */
+  display: inline-block;
   padding: 0.95rem 2.8rem;
   border-radius: 16px;
-  background: linear-gradient(135deg, #22d3ee, #4f46e5, #2563eb);
 
+  /* 🔥 Theme-matched gradient */
+  background: linear-gradient(135deg,
+    #38bdf8, #8b5cf6, #ec4899);
+  background-size: 150% 150%;
 
-
-
-  background-size: 200% 200%;
   color: #020617;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.03em;
-
-  box-shadow:
-    0 0 35px rgba(99,102,241,0.45),
-    0 0 60px rgba(34,211,238,0.35);
-
-  transition: 
+  transition:
     background-position 0.6s ease,
-    box-shadow 0.4s ease,
     transform 0.3s ease;
 }
 
+
 .btn-primary:hover {
   transform: scale(1.1);
-  background: linear-gradient(315deg, #22d3ee, #4f46e5, #2563eb);
-  box-shadow:
-    0 0 45px rgba(37,99,235,0.75),
-    0 0 80px rgba(34,211,238,0.6);
+  background: linear-gradient(
+    315deg, #38bdf8, #8b5cf6, #ec4899);
 }
 
 
@@ -395,10 +394,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.feature-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(225, 0, 255, 0.25);
-}
+
 
 .feature-card i {
   font-size: 2.8rem;
@@ -406,35 +402,17 @@ body {
    background: linear-gradient(135deg, #38bdf8, #8b5cf6, #ec4899);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-/*  animation: floatIcon 3s ease-in-out infinite; */
 }
-
-/* Float animation */
-/* @keyframes floatIcon {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
-} */
 
 /* Hover enhancement */
 .feature-card:hover {
   transform: translateY(-12px);
-  box-shadow:
-    0 0 25px rgba(56, 189, 248, 0.4),
-    0 0 45px rgba(139, 92, 246, 0.5),
-    0 0 65px rgba(236, 72, 153, 0.4);
+  
 }
-
-
-
 
 .feature-card:hover i {
  /* animation-play-state: paused; */
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 
@@ -453,11 +431,22 @@ body {
       rgba(26,26,46,0.85)
     );
 
-    border: 1px solid rgba(139, 92, 246, 0.35);
 
+    border: 1px solid rgba(139, 92, 246, 0.35);
+    animation: mobileGlow 4s ease-in-out infinite;
   }
 }
 
+@keyframes mobileGlow {
+  0%, 100% {
+    transform: translateY(0);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.25);
+  }
+  50% {
+    transform: translateY(-6px);
+    box-shadow: 0 0 35px rgba(217, 70, 239, 0.45);
+  }
+}
 @media (max-width: 768px) {
   .feature-card:nth-child(1) { animation-delay: 0s; }
   .feature-card:nth-child(2) { animation-delay: 1s; }
@@ -498,17 +487,7 @@ body {
     max-width: 900px; /* Limit max width */
     gap: 40px; /* Space between contact tiles */
 }
-@media (max-width: 768px) {
-  .contact-grid {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .contact-info {
-    max-width: 100%;
-    width: 100%;
-  }
-}
 /* Contact Tiles */
 .contact-info {
   background: rgba(26, 26, 46, 0.95);
@@ -570,19 +549,14 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.7));
 }
 
-  .contact-info iframe {
-  width: 100%;
-  height: 260px;
-  border-radius: 12px;
-}
+  
 /* ================= FOOTER ================= */
 /* Divider before footer */
 .footer-divider {
   height: 1px;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 
   background: linear-gradient(
@@ -601,21 +575,50 @@ body {
 .footer {
   padding: 4rem 6% 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  /* 👇 force left | center | right */
+  grid-template-columns: 1fr auto 1fr;
+
   gap: 2.5rem;
+  align-items: start;
 
   background: rgba(2, 6, 23, 0.95);
   backdrop-filter: blur(8px);
 }
 
-.footer h3 {
+.footer-brand h3 {
   font-size: 1.8rem;
   font-weight: 800;
 
-  background: linear-gradient(90deg, #38bdf8, #8b5cf6);
+   background: linear-gradient(
+    90deg,
+     #22d3ee 0%,
+    #38bdf8 25%,
+    #8b5cf6 50%,
+    #ec4899 95%
+  );
+
+    background-size: 75% 100%; 
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.footer-brand {
+  text-align: left;
+  justify-self: start;
+}
+
+.footer-links {
+  text-align: center;
+  justify-self: center;
+}
+
+.footer-contact {
+  text-align: left;
+  justify-self: end;
+}
+
 
 .footer h4 {
   font-size: 1.2rem;
@@ -695,3 +698,35 @@ body {
   .hero h1 {
     font-size: 2.8rem;
   }
+
+  .circle-wrapper {
+    width: 190px;   /* ⬅ increased */
+    height: 190px;
+  }
+
+  .inner-circle {
+    inset: 30px;    /* keeps logo centered */
+  }
+
+  .inner-logo {
+    width: 95%;
+  }
+
+  .outer-circle text {
+    font-size: 34px;  /* clearer on phones */
+    letter-spacing: 2px;
+  }
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes rotate {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}
+
+
+
+@keyframes glow {
+  from { text-shadow: 0 0 20px rgba(56,189,248,0.3); }
+  to { text-shadow: 0 0 40px rgba(139,92,246,0.6); }
+}
