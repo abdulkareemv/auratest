@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #020617;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* PRELOADER */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FRAME */
+.aura-frame {
+  border: 2px solid rgba(139,92,246,0.7);
+  padding: 36px 60px;
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(139,92,246,0.6);
+
+  opacity: 0;
+  transform: scale(0.8);
+  animation: frameIn 1s ease-out forwards;
+}
+
+@keyframes frameIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* LETTERS */
+.aura-letters {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.aura-letters span {
+  font-size: 3rem;
+  font-weight: 900;
+  opacity: 0;
+  transform: translateY(-80px);
+
+  animation: drop 0.7s ease forwards;
+  animation-delay: calc(var(--i) * 0.25s + 0.8s);
+
+  /* VERTICAL GRADIENT */
+  background: linear-gradient(
+    180deg,
+    #38bdf8,
+    #8b5cf6,
+    #ec4899
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes drop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* DATE */
+.launch-date {
+  margin-top: 45px;
+  text-align: center;
+  animation: fadeUp 1s forwards;
+}
+
+.launch-date p {
+  font-size: 1.4rem;
+  color: #c7d2fe;
+}
+
+.launch-date h3 {
+  font-size: 2.4rem;
+  margin-top: 5px;
+  background: linear-gradient(180deg, #38bdf8, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* LOGOS */
+.logos {
+  margin-top: 35px;
+  text-align: center;
+  animation: fadeUp 1s forwards;
+}
+
+.logos img {
+  width: 90px;
+  margin: 10px;
+}
+
+.logos p {
+  font-size: 1.1rem;
+  color: #e5e7eb;
+}
+
+/* FIREWORKS */
+#fireworks {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* UTIL */
+.hidden {
+  display: none;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
