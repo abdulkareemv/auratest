@@ -618,7 +618,24 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (max-width: 768px){
+  .footer-brand h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
 
+   background: linear-gradient(
+    90deg,
+     #22d3ee 0%,
+    #38bdf8 25%,
+    #8b5cf6 50%,
+    #ec4899 100%
+  );
+
+    background-size: 80% 100%; 
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .footer-brand {
   text-align: left;
   justify-self: start;
