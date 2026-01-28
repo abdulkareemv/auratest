@@ -20,7 +20,7 @@ canvas.height = innerHeight;
 let particles = [];
 
 function startFireworks() {
-  setInterval(createFirework, 800);
+  setInterval(createFirework, 600);
   animateFireworks();
 }
 
@@ -29,9 +29,9 @@ function createFirework() {
   const y = Math.random() * canvas.height * 0.45;
   const color = `hsl(${Math.random() * 360}, 100%, 60%)`;
 
-  for (let i = 0; i < 120; i++) {
+  for (let i = 0; i < 180; i++) {
     const angle = Math.random() * Math.PI * 2;
-    const speed = Math.random() * 5 + 1;
+    const speed = Math.random() * 6 + 1;
 
     particles.push({
       x, y,
@@ -44,18 +44,19 @@ function createFirework() {
 }
 
 function animateFireworks() {
+  ctx.fillStyle = 'rgba(2,6,23,0.2)'; // slight trail effect
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   particles.forEach((p, i) => {
     p.x += p.vx;
     p.y += p.vy;
-    p.vy += 0.04;
-    p.alpha -= 0.015;
+    p.vy += 0.05;
+    p.alpha -= 0.016;
 
     ctx.globalAlpha = p.alpha;
     ctx.fillStyle = p.color;
     ctx.beginPath();
-    ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
+    ctx.arc(p.x, p.y, 2.5, 0, Math.PI * 2);
     ctx.fill();
 
     if (p.alpha <= 0) particles.splice(i, 1);
@@ -66,6 +67,7 @@ function animateFireworks() {
 }
 
 // OPTIONAL: redirect after preloader
-setTimeout(() => {
+/* setTimeout(() => {
   window.location.href = "index.html";
  }, 12000);
+*/
