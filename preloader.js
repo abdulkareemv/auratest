@@ -61,5 +61,5 @@ animateFireworks();
 
 /* REDIRECT TO MAIN SITE */
 setTimeout(() => {
-  window.location.href = "main.html";
+  window.location.href = "index.html";
 }, 9000);
