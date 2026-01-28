@@ -1,14 +1,17 @@
-/* SHOW DATE */
+// SHOW DATE
 setTimeout(() => {
-  document.querySelector('.launch-date').classList.remove('hidden');
-}, 3500);
+  document.getElementById("date").classList.add("show");
+}, 2800); // slightly after letters drop
 
-/* SHOW LOGOS */
+// SHOW LOGOS
 setTimeout(() => {
-  document.querySelector('.logos').classList.remove('hidden');
-}, 5000);
+  document.getElementById("logos").classList.add("show");
+}, 4200); // after date appears
 
-/* FIREWORKS */
+// FIREWORKS
+setTimeout(startFireworks, 5800);
+
+// CANVAS
 const canvas = document.getElementById("fireworks");
 const ctx = canvas.getContext("2d");
 canvas.width = innerWidth;
@@ -16,17 +19,22 @@ canvas.height = innerHeight;
 
 let particles = [];
 
+function startFireworks() {
+  setInterval(createFirework, 800);
+  animateFireworks();
+}
+
 function createFirework() {
   const x = Math.random() * canvas.width;
   const y = Math.random() * canvas.height * 0.45;
-  const color = `hsl(${Math.random()*360},100%,60%)`;
+  const color = `hsl(${Math.random() * 360}, 100%, 60%)`;
 
-  for (let i = 0; i < 110; i++) {
+  for (let i = 0; i < 120; i++) {
     const angle = Math.random() * Math.PI * 2;
     const speed = Math.random() * 5 + 1;
+
     particles.push({
-      x,
-      y,
+      x, y,
       vx: Math.cos(angle) * speed,
       vy: Math.sin(angle) * speed,
       alpha: 1,
@@ -41,7 +49,7 @@ function animateFireworks() {
   particles.forEach((p, i) => {
     p.x += p.vx;
     p.y += p.vy;
-    p.vy += 0.05;
+    p.vy += 0.04;
     p.alpha -= 0.015;
 
     ctx.globalAlpha = p.alpha;
@@ -57,10 +65,7 @@ function animateFireworks() {
   requestAnimationFrame(animateFireworks);
 }
 
-setInterval(createFirework, 750);
-animateFireworks();
-
-/* REDIRECT */
+// OPTIONAL: redirect after preloader
 setTimeout(() => {
-  window.location.href = "main.html";
-}, 9500);
+  window.location.href = "index.html";
+ }, 12000);
