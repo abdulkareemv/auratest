@@ -1,5 +1,6 @@
 // SHOW DATE
 setTimeout(() => {
+ 
   document.getElementById("date").classList.add("show");
 }, 2800); // slightly after letters drop
 
@@ -67,6 +68,7 @@ function animateFireworks() {
 }
 
 // OPTIONAL: redirect after preloader
- setTimeout(() => {
+/* setTimeout(() => {
   window.location.href = "index.html";
  }, 12000);
+*/
