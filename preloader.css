@@ -20,6 +20,45 @@ body {
   align-items: center;
   justify-content: center;
 }
+.welcome-text {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+
+  background: linear-gradient(
+    90deg,
+    #5FD6E8,
+    #A5F3FC,
+    #5FD6E8
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 0 18px rgba(95, 214, 232, 0.35);
+  opacity: 0;
+
+  animation: welcomeFade 1.2s ease forwards;
+  animation-delay: 0.3s;
+}
+@media (max-width: 600px) {
+  .welcome-text {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+  }
+}
+
+@keyframes welcomeFade {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+}
 
 /* FRAME */
 .aura-frame {
@@ -132,17 +171,19 @@ body {
 
 /* Aura logo violet radial glow */
 .logo-circle:nth-child(1) {
-  background: radial-gradient(circle, rgba(139,92,246,0.4) 40%, rgba(139,92,246,0.0) 60%);
+  background: radial-gradient(circle, rgba(139,92,246,0.5) 45%, rgba(139,92,246,0.0) 60%);
 }
 
 /* College logo bluish radial glow – lighter blue */
 .logo-circle:nth-child(2) {
   background: radial-gradient(
-    circle, 
-    rgba(173, 216, 230, 0.5) 40%,  /* light pastel blue center */
-    rgba(173, 216, 230, 0.0) 60%   /* fade out smoothly */
+    circle,
+    rgba(60, 214, 232, 0.7) 40%,  /* #5FD6E8 center */
+    rgba(60, 214, 232, 0.0) 60%   /* smooth fade */
   );
 }
+
+
 
 
 .logo-circle img {
