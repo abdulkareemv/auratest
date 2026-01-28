@@ -70,4 +70,4 @@ function animateFireworks() {
 // OPTIONAL: redirect after preloader
 setTimeout(() => {
   window.location.href = "main.html";
- }, 12000);
+ }, 10000);
