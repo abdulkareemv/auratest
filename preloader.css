@@ -21,7 +21,7 @@ body {
   justify-content: center;
 }
 
-/* FRAME */
+/* FRAME – DROPS DOWN */
 .aura-frame {
   border: 2px solid rgba(139,92,246,0.7);
   padding: 36px 60px;
@@ -29,18 +29,19 @@ body {
   box-shadow: 0 0 50px rgba(139,92,246,0.6);
 
   opacity: 0;
-  transform: scale(0.8);
-  animation: frameIn 1s ease-out forwards;
+  transform: translateY(-120px);
+  animation: frameDrop 1.2s ease-out forwards;
 }
 
-@keyframes frameIn {
+/* Frame vertical drop */
+@keyframes frameDrop {
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
   }
 }
 
-/* LETTERS */
+/* LETTER STACK */
 .aura-letters {
   display: flex;
   flex-direction: column;
@@ -48,14 +49,15 @@ body {
   align-items: center;
 }
 
+/* LETTERS – DROP INSIDE FRAME */
 .aura-letters span {
   font-size: 3rem;
   font-weight: 900;
   opacity: 0;
-  transform: translateY(-80px);
+  transform: translateY(-60px);
 
-  animation: drop 0.7s ease forwards;
-  animation-delay: calc(var(--i) * 0.25s + 0.8s);
+  animation: letterDrop 0.6s ease-out forwards;
+  animation-delay: calc(var(--i) * 0.22s + 0.8s);
 
   /* VERTICAL GRADIENT */
   background: linear-gradient(
@@ -68,12 +70,16 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-@keyframes drop {
+@keyframes letterDrop {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
+
+
+
 
 /* DATE */
 .launch-date {
