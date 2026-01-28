@@ -1,26 +1,27 @@
-/* SHOW DATE & LOGOS */
+/* SHOW DATE */
 setTimeout(() => {
   document.querySelector('.launch-date').classList.remove('hidden');
-}, 3000);
+}, 3500);
 
+/* SHOW LOGOS */
 setTimeout(() => {
   document.querySelector('.logos').classList.remove('hidden');
-}, 4300);
+}, 5000);
 
 /* FIREWORKS */
 const canvas = document.getElementById("fireworks");
 const ctx = canvas.getContext("2d");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = innerWidth;
+canvas.height = innerHeight;
 
 let particles = [];
 
 function createFirework() {
   const x = Math.random() * canvas.width;
-  const y = Math.random() * canvas.height * 0.5;
-  const color = `hsl(${Math.random() * 360}, 100%, 60%)`;
+  const y = Math.random() * canvas.height * 0.45;
+  const color = `hsl(${Math.random()*360},100%,60%)`;
 
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 110; i++) {
     const angle = Math.random() * Math.PI * 2;
     const speed = Math.random() * 5 + 1;
     particles.push({
@@ -56,10 +57,10 @@ function animateFireworks() {
   requestAnimationFrame(animateFireworks);
 }
 
-setInterval(createFirework, 800);
+setInterval(createFirework, 750);
 animateFireworks();
 
-/* REDIRECT TO MAIN SITE */
+/* REDIRECT */
 setTimeout(() => {
-  window.location.href = "index.html";
-}, 9000);
+  window.location.href = "main.html";
+}, 9500);
