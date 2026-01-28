@@ -522,6 +522,7 @@ body {
   .contact-header h2 {
     font-size: 2.3rem;
   }
+}
 @media (max-width: 768px) {
   .contact-header {
     margin-bottom: 2.5rem;
@@ -530,6 +531,18 @@ body {
 @media (max-width: 480px) {
   .contact-header h2 {
     font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contact-info {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
