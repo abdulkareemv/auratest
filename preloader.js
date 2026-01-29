@@ -7,10 +7,10 @@ setTimeout(() => {
 // SHOW LOGOS
 setTimeout(() => {
   document.getElementById("logos").classList.add("show");
-}, 4200); // after date appears
+}, 4000); // after date appears
 
 // FIREWORKS
-setTimeout(startFireworks, 5800);
+setTimeout(startFireworks, 5000);
 
 // CANVAS
 const canvas = document.getElementById("fireworks");
@@ -70,4 +70,4 @@ function animateFireworks() {
 // OPTIONAL: redirect after preloader
 setTimeout(() => {
   window.location.href = "main.html";
- }, 10000);
+ }, 9000);
