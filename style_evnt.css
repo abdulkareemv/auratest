@@ -1,0 +1,500 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #0f0f1f, #1a1a2e, #3b3b98);
+    color: #fff;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #0f0f1f, #1f1f3b);
+    padding: 1.5rem 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    color: #e100ff;
+    font-size: clamp(2rem, 6vw, 3rem); /* Responsive font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation Bar */
+nav {
+    margin-top: 10px;
+}
+
+.home-btn {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #ff0080, #ff00ff);
+    color: white;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.home-btn:hover {
+    background: linear-gradient(45deg, #ff00ff, #ff0080);
+    transform: scale(1.1);
+}
+
+.rules h4 {
+   color: #32CD32;
+   text-align: left; 
+    font-weight: bold;
+}
+/* Footer */
+footer {
+  background-color: #0f0f1f;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+footer .footer-links a {
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+footer .footer-links a:hover {
+  color: #7f00ff;
+}
+footer .social-icons a {
+  margin: 0 0.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+footer .social-icons a:hover {
+  color: #e100ff;
+}
+.register-button {
+  margin-top: 30px;
+   margin-bottom: 30px;
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background: linear-gradient(to right, #ff0080, #8000ff); /* Magenta to Violet */
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .register-button:hover {
+        background: linear-gradient(to right, #8000ff, #ff0080);
+        transform: scale(1.1);
+    }
+.event-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.event-info {
+    text-align: center;  /* Centers the date and time */
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.rules h4 {
+    color: light green; /* Rules & Regulations heading in red */
+  font-weight: bold;
+}
+
+.contact h4 {
+    color: #67E8F9;  /* Contact Details heading in green */
+  font-weight: bold;
+ 
+}
+.contact h5 {
+     color: #A0F0FF;  /* Contact Details heading in green */
+ 
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Background Image for the Event Section */
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; /* Ensure text remains visible */
+}
+
+/* Styling for Event Cards */
+.event-card {
+    background: linear-gradient(145deg, #1a1a3d, #12122b);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(127, 0, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(5px); /* Adds a blur effect for better readability */
+}
+
+/* Hover Effects */
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(127, 0, 255, 0.7);
+}
+
+.event-card h2 {
+    color: #00f7ff;
+}
+
+.image-container {
+    position: relative;
+    width: 1200px;
+    max-width: 1000px; /* Adjust as needed */
+    margin: auto;
+}
+
+.event-image {
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.overlay-content h2 {
+    font-size: 24px;
+    color: #00f7ff;
+}
+
+.prizes {
+    font-weight: bold;
+    color: #ffea00;
+}
+
+ .rules, .contact {
+    font-size: 14px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.half-section, .half-section1, .half-section2 {
+    background: rgba(255, 255, 255, 0.2); /* Light transparent background */
+    padding: 10px;
+    border-radius: 10px;
+}
+.half-section {
+    width: 48%;
+    float: left;
+}
+.half-section1 {
+    width: 58%;
+    float: left;
+}
+
+
+.half-section2 {
+    width: 38%;
+    float: right;
+}
+
+@media (max-width: 768px) {
+    .overlay-content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .half-section1, .half-section2 {
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+    }
+}
+ body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a2e;
+            color: #fff;
+            line-height: 1.6;
+        }
+        /* Header */
+        .header {
+            background-color: #0f0f1f;
+            padding: 1rem 0;
+        }
+   
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .header .logo img {
+            width: 120px;
+        }
+   .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 1rem;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar ul li a:hover {
+            color: #7f00ff; /* Matching gradient start color */
+        }
+.subheading {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #00f7ff;
+        text-align: center;
+        margin-top: -10px;
+        opacity: 0.8;
+    }
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+    
+    body {
+        font-family: 'Orbitron', sans-serif;
+        background-color: #0d0d1a;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+    .event-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+    .event-card {
+        background: linear-gradient(145deg, #1a1a3d, #12122b);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(127, 0, 255, 0.5);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .event-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(127, 0, 255, 0.7);
+    }
+    .event-card h2 {
+        color: #00f7ff;
+    }
+    .prizes {
+        font-weight: bold;
+        color: #ffea00;
+    }
+    .rules {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+  .important-info {
+            background-color: #ffea00;
+            color: #000;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 15px;
+        }
+  .important-info1 {
+    background-color: #FFC107; /* Amber shade for better contrast */
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+    .event-card::before {
+        content: '';
+        position: absolute;
+        width: 150%;
+        height: 150%;
+        background: radial-gradient(circle, rgba(127, 0, 255, 0.3) 10%, transparent 70%);
+        top: -50%;
+        left: -50%;
+        animation: glow 4s infinite linear;
+    }
+    @keyframes glow {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+        
+        body {
+            font-family:  'Oswald', sans-serif;
+        
+         
+            background-color: #0d0d1a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1150px;
+            margin: auto;
+            padding: 20px;
+        }
+       /* Background Image for the Event Section */
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; /* Ensure text remains visible */
+}
+
+/* Styling for Event Cards */
+.event-card {
+    background: linear-gradient(145deg, #1a1a3d, #12122b);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(127, 0, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(5px); /* Adds a blur effect for better readability */
+}
+
+/* Hover Effects */
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(127, 0, 255, 0.7);
+}
+
+        .event-card h2 {
+            color: #00f7ff;
+        }
+        .prizes {
+            font-weight: bold;
+            color: #ffea00;
+        }
+        .rules {
+            margin-top: 10px;
+            font-size: 14px;
+  text-align: left;
+        }
+      .rules ol {
+    padding-left: 20px; /* Ensures proper indentation */
+}
+    </style>
+
+
+<style>
+    .subheading {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #00f7ff;
+        text-align: center;
+        margin-top: -10px;
+        opacity: 0.8;
+    }
+
+    .subheading-ecel {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #ffea00;
+        text-align: center;
+        margin-top: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+.coordinator p {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px; /* Controls spacing */
+    align-items: center;
+}
+
+.coordinator p strong {
+    display: inline-block;
+    width: 140px; /* Adjust width to align numbers properly */
+    text-align: left;
+}
+.blinking-warning {
+    display: block;
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 5px;
+    animation: blink 1s infinite alternate;
+  }
+
+  @keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+@keyframes blink1 {
+    0% { opacity: 1; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+</style>
+
+
+
+  
+      
