@@ -1,3 +1,14 @@
+<script>
+  const links = document.querySelectorAll(".nav-links a");
+  const page = location.pathname.split("/").pop() || "#";
+
+  links.forEach(link => {
+    if (link.getAttribute("href") === page) {
+      link.classList.add("active");
+    }
+  });
+
+
 /* ================= SCROLL REVEAL ================= */
 const observer = new IntersectionObserver(
   entries => {
@@ -76,3 +87,4 @@ updateCountdown();
 
 // Update every second
 setInterval(updateCountdown, 1000);
+</script>
