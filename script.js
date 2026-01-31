@@ -1,4 +1,4 @@
-<script>
+
   const links = document.querySelectorAll(".nav-links a");
   const page = location.pathname.split("/").pop() || "#";
 
@@ -87,4 +87,4 @@ updateCountdown();
 
 // Update every second
 setInterval(updateCountdown, 1000);
-</script>
+
