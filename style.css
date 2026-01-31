@@ -487,6 +487,75 @@ body {
   }
 }
 
+.abt {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 1.5rem;
+
+  background: radial-gradient(
+      circle at top,
+      rgba(139, 92, 246, 0.25),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      #0f172a,
+      #0b1e33,
+      #020617
+    );
+
+  color: #e5e7eb;
+}
+
+/* Main heading */
+.abt-title {
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  line-height: 1.1;
+}
+
+/* Gradient word */
+.abt-title span {
+  background: linear-gradient(
+    90deg,
+    #38bdf8,
+    #3b82f6,
+    #8b5cf6,
+    #d946ef
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Sub text */
+.abt-subtext {
+  max-width: 720px;
+  font-size: 1.15rem;
+  color: #9ca3af;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+
+
+/* Mobile tuning */
+@media (max-width: 600px) {
+  .register-frame {
+    font-size: 1.1rem;
+    gap: 0.6rem;
+  }
+}
+
+
+
+
+
+
+/*---- Feature Card---*/
 .feature-card {
   background-color: #1a1a2e;
   padding: 2rem;
@@ -494,8 +563,6 @@ body {
     text-align: center;              /* CENTER CONTENT */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-
 
 .feature-card i {
   font-size: 2.8rem;
