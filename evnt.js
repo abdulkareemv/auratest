@@ -30,3 +30,9 @@ function closeEventModal() {
   document.getElementById("eventModal").classList.remove("active");
   document.body.style.overflow = "";
 }
+document.getElementById("eventModal").addEventListener("click", e => {
+  if (e.target.id === "eventModal") closeEventModal();
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") closeEventModal();
+});
