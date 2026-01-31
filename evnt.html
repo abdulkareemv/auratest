@@ -34,66 +34,147 @@
 </nav>
 </header>
 
-  <header>
-    <h1>Events</h1>
-    <p>Explore the technical and non-technical events of AURA 2K26. Choose your challenge, show your skills, and compete with the best.</p>
-  </header>
+<section class="events-title">
+  <h1>AURA 2K26 EVENTS</h1>
+  <p>Choose your arena. Prove your skills. Claim your aura.</p>
+</section>
 
-  <section class="events">
+<section class="events-grid">
 
-    <!-- Event 1 -->
-    <div class="event-card">
-      <h2 class="event-title">Line Follower Challenge</h2>
-      <div class="event-meta">📅 12 Feb 2026 • ⏰ 10:00 AM • 📍 Robotics Lab</div>
-      <p class="event-desc">Design and program an autonomous robot that can accurately follow a predefined path with speed and precision.</p>
-      <div class="tags">
-        <span class="tag">Robotics</span>
-        <span class="tag">Hardware</span>
-        <span class="tag">Arduino</span>
-      </div>
-      <a href="#" class="btn">View Rules</a>
-    </div>
+  <!-- Event Card -->
+<div class="event-card"
+     onclick="openEventModal(this)"
+     data-title="Arduino Blitz"
+     data-type="Arduino Prototyping"
+     data-description="Test your coding speed and logic by programming an Arduino instantly to complete a surprise challenge. Participants will receive a problem statement on the spot and must write and execute the Arduino program within the given time."
+     data-date="16/02/2026"
+     data-time="10:30 AM"
+     data-venue="Room #209"
+     data-prize="₹3000 / ₹2000 / ₹1000"
+     data-coordinators="Mr. Abdul Nazar C, Mr. Suhas Sugathan, Mrs. Safna K"
+     data-rules="
+Must carry College ID / School ID / Government-approved ID proof.
+Report at the venue at least 15 minutes before the event.
+Team registration only; maximum 3 members per team.
+Competition duration is 60 minutes.
+Problem statement will be given on the spot.
+Arduino board, components, and system will be provided by the college.
+Only provided components must be used.
+Judges’ decisions will be final and binding.
+">
 
-    <!-- Event 2 -->
-    <div class="event-card">
-      <h2 class="event-title">Web Design Hackathon</h2>
-      <div class="event-meta">📅 12 Feb 2026 • ⏰ 1:30 PM • 📍 Seminar Hall</div>
-      <p class="event-desc">Build a creative and responsive website within a limited time using HTML, CSS, and JavaScript.</p>
-      <div class="tags">
-        <span class="tag">Web</span>
-        <span class="tag">UI/UX</span>
-        <span class="tag">Frontend</span>
-      </div>
-      <a href="#" class="btn">Register</a>
-    </div>
+  <div class="event-icon">
+    <i class="fas fa-microchip"></i>
+  </div>
 
-    <!-- Event 3 -->
-    <div class="event-card">
-      <h2 class="event-title">Paper Presentation</h2>
-      <div class="event-meta">📅 13 Feb 2026 • ⏰ 10:00 AM • 📍 Conference Hall</div>
-      <p class="event-desc">Present your innovative ideas and research papers before a panel of experts and gain recognition.</p>
-      <div class="tags">
-        <span class="tag">Presentation</span>
-        <span class="tag">Research</span>
-        <span class="tag">Innovation</span>
-      </div>
-      <a href="#" class="btn">Submit Abstract</a>
-    </div>
+  <h3>Arduino Blitz</h3>
+  <p>Arduino Prototyping</p>
+ <a class="event-btn">Click for details & registration</a>
+</div>
 
-    <!-- Event 4 -->
-    <div class="event-card">
-      <h2 class="event-title">Tech Quiz</h2>
-      <div class="event-meta">📅 13 Feb 2026 • ⏰ 2:00 PM • 📍 Auditorium</div>
-      <p class="event-desc">Test your technical knowledge across electronics, programming, and general tech awareness.</p>
-      <div class="tags">
-        <span class="tag">Quiz</span>
-        <span class="tag">Tech</span>
-        <span class="tag">Fun</span>
-      </div>
-      <a href="#" class="btn">Join Now</a>
-    </div>
 
-  </section>
+
+  <div class="event-card">
+    <div class="event-icon"><i class="fas fa-bug"></i></div>
+    <h3>Debug-X</h3>
+    <p>Circuit Debugging Contest</p>
+    <a href="#" class="event-btn">Click for details & registration</a>
+  </div>
+
+  <div class="event-card">
+    <div class="event-icon"><i class="fas fa-robot"></i></div>
+    <h3>TrackBot</h3>
+    <p>The Line Grand Prix</p>
+    <a href="#" class="event-btn">Click for details & registration</a>
+  </div>
+
+  <div class="event-card">
+    <div class="event-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+    <h3>Tech Talk</h3>
+    <p>Seminar Contest</p>
+    <a href="#" class="event-btn">Click for details & registration</a>
+  </div>
+
+  <div class="event-card">
+    <div class="event-icon"><i class="fas fa-tools"></i></div>
+    <h3>HobbIT</h3>
+    <p>Hobby Circuit Making</p>
+    <a href="#" class="event-btn">Click for details & registration</a>
+  </div>
+
+  <div class="event-card">
+    <div class="event-icon"><i class="fas fa-question-circle"></i></div>
+    <h3>Techno Quest</h3>
+    <p>Technical Quiz Contest</p>
+    <a href="#" class="event-btn">Click for details & registration</a>
+  </div>
+
+  <div class="event-card">
+    <div class="event-icon"><i class="fas fa-fire"></i></div>
+    <h3>HEAT N BEAT</h3>
+    <p>Soldering Competition</p>
+    <a href="#" class="event-btn">Click for details & registration</a>
+  </div>
+
+  <div class="event-card">
+    <div class="event-icon"><i class="fas fa-lightbulb"></i></div>
+    <h3>IDEATHON</h3>
+    <p>Startup Idea Presentation</p>
+    <a href="#" class="event-btn">Click for details & registration</a>
+  </div>
+
+  <div class="event-card">
+    <div class="event-icon"><i class="fas fa-bolt"></i></div>
+    <h3>Logic Relay Challenge</h3>
+    <p>Relay-based Circuit Making</p>
+    <a href="#" class="event-btn">Click for details & registration</a>
+  </div>
+
+  <div class="event-card">
+    <div class="event-icon"><i class="fas fa-user-tie"></i></div>
+    <h3>Oracy</h3>
+    <p>Best Manager</p>
+    <a href="#" class="event-btn">Click for details & registration</a>
+  </div>
+
+  <div class="event-card">
+    <div class="event-icon"><i class="fas fa-newspaper"></i></div>
+    <h3>Samvad</h3>
+    <p>Mock Press</p>
+    <a href="#" class="event-btn">Click for details & registration</a>
+  </div>
+
+  <div class="event-card">
+    <div class="event-icon"><i class="fas fa-code"></i></div>
+    <h3>C Fresh</h3>
+    <p>C Programming Contest</p>
+    <a href="#" class="event-btn">Click for details & registration</a>
+  </div>
+
+  <div class="event-card">
+    <div class="event-icon"><i class="fas fa-puzzle-piece"></i></div>
+    <h3>Jigsaw</h3>
+    <p>Puzzle Game</p>
+    <a href="#" class="event-btn">Click for details & registration</a>
+  </div>
+
+  <div class="event-card">
+    <div class="event-icon"><i class="fas fa-map-marked-alt"></i></div>
+    <h3>The Quest for Aura</h3>
+    <p>Treasure Hunt</p>
+    <a href="#" class="event-btn">Click for details & registration</a>
+  </div>
+
+  <div class="event-card">
+    <div class="event-icon"><i class="fas fa-tshirt"></i></div>
+    <h3>Fashion Show</h3>
+    <p>Style & Expression</p>
+    <a href="#" class="event-btn">Click for details & registration</a>
+  </div>
+
+</section>
+
+  
   
   
   
@@ -124,6 +205,54 @@
     <p><i class="fas fa-phone"></i>9846 136 929</p>
   </div>
 </footer>
+  
+<!-- model -->
+<div class="event-modal" id="eventModal">
+  <div class="event-modal-content">
 
+    <button class="event-modal-close" onclick="closeEventModal()">✕</button>
+
+    <!-- HEADER -->
+    <div class="event-modal-header">
+      <div class="event-icon large">
+        <i class="fas fa-microchip"></i>
+      </div>
+      <div>
+        <h2 id="modalTitle"></h2>
+        <span id="modalType"></span>
+      </div>
+    </div>
+
+    <!-- DESCRIPTION -->
+    <h3>Description</h3>
+    <p id="modalDescription"></p>
+
+    <!-- INFO -->
+    <div class="event-info">
+      <div><strong>Date</strong><br><span id="modalDate"></span></div>
+      <div><strong>Time</strong><br><span id="modalTime"></span></div>
+      <div><strong>Venue</strong><br><span id="modalVenue"></span></div>
+    </div>
+
+    <!-- PRIZE -->
+    <h3>Prizes</h3>
+    <p id="modalPrize"></p>
+
+    <!-- RULES -->
+    <h3>Event Rules</h3>
+    <ul id="modalRules"></ul>
+
+    <!-- COORDINATORS -->
+    <h3>Staff Coordinators</h3>
+    <p id="modalCoordinators"></p>
+
+    <!-- REGISTER -->
+    <button class="register-btn">Register Now</button>
+
+  </div>
+</div>
+
+  
+  
 </body>
 </html>
