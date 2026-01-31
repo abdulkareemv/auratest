@@ -359,6 +359,20 @@ transition: background 0.5s ease, color 0.5s ease;
   color: #38bdf8;
 }
 
+.event-modal-content {
+  animation: popIn 0.35s ease;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
 
 
