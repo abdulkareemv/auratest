@@ -8,6 +8,7 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- CSS -->
   <link rel="stylesheet" href="evnt.css">
@@ -50,8 +51,10 @@
      data-date="16/02/2026"
      data-time="10:30 AM"
      data-venue="Room #209"
-     data-prize="₹3000 / ₹2000 / ₹1000"
-     data-coordinators="Mr. Abdul Nazar C, Mr. Suhas Sugathan, Mrs. Safna K"
+     data-prize="3000,2000,1000"
+     data-fee="50"
+     data-staff="Mr. Abdul Nazar C -959494, Mr. Suhas Sugathan, Mrs. Safna K"
+     data-students="Fathima Shifana"
      data-rules="
 Must carry College ID / School ID / Government-approved ID proof.
 Report at the venue at least 15 minutes before the event.
@@ -69,7 +72,7 @@ Judges’ decisions will be final and binding.
 
   <h3>Arduino Blitz</h3>
   <p>Arduino Prototyping</p>
- <a class="event-btn">Click for details & registration</a>
+ <a class="event-btn">Event Details</a>
 </div>
 
 
@@ -205,11 +208,13 @@ Judges’ decisions will be final and binding.
     <p><i class="fas fa-phone"></i>9846 136 929</p>
   </div>
 </footer>
-  
-<!-- model -->
+ 
+  <!-- Event model -->
+<!-- MODAL -->
 <div class="event-modal" id="eventModal">
   <div class="event-modal-content">
 
+    <!-- TOP CLOSE -->
     <button class="event-modal-close" onclick="closeEventModal()">✕</button>
 
     <!-- HEADER -->
@@ -224,34 +229,97 @@ Judges’ decisions will be final and binding.
     </div>
 
     <!-- DESCRIPTION -->
-    <h3>Description</h3>
-    <p id="modalDescription"></p>
-
-    <!-- INFO -->
-    <div class="event-info">
-      <div><strong>Date</strong><br><span id="modalDate"></span></div>
-      <div><strong>Time</strong><br><span id="modalTime"></span></div>
-      <div><strong>Venue</strong><br><span id="modalVenue"></span></div>
+    <div class="section">
+      <h3><i class="fas fa-align-left"></i> Description</h3>
+      <p id="modalDescription"></p>
     </div>
 
-    <!-- PRIZE -->
-    <h3>Prizes</h3>
-    <p id="modalPrize"></p>
+    <!-- INFO -->
+    <div class="section">
+  <div class="event-info">
 
-    <!-- RULES -->
-    <h3>Event Rules</h3>
-    <ul id="modalRules"></ul>
+    <div class="info-card">
+      <i class="far fa-calendar"></i>
+      <div class="info-text">
+        <span class="label">Date</span>
+        <strong id="modalDate"></strong>
+      </div>
+    </div>
 
-    <!-- COORDINATORS -->
-    <h3>Staff Coordinators</h3>
-    <p id="modalCoordinators"></p>
+    <div class="info-card">
+      <i class="far fa-clock"></i>
+      <div class="info-text">
+        <span class="label">Time</span>
+        <strong id="modalTime"></strong>
+      </div>
+    </div>
 
-    <!-- REGISTER -->
-    <button class="register-btn">Register Now</button>
+    <div class="info-card">
+      <i class="fas fa-location-dot"></i>
+      <div class="info-text">
+        <span class="label">Venue</span>
+        <strong id="modalVenue"></strong>
+      </div>
+    </div>
 
   </div>
 </div>
-<script src="evnt.js"></script>
+
+   <!-- RULES -->
+<div class="section">
+  <h3><i class="fas fa-list-check"></i> Event Rules</h3>
+  <ol id="modalRules"></ol>
+</div>
+
+<!-- PRIZES -->
+<div class="section">
+  <h3><i class="fas fa-trophy"></i> Prizes</h3>
+  <div class="prize-row">
+    <div class="prize-item gold">
+      <i class="fas fa-medal"></i>
+      <span>1st</span>
+      <strong id="prize1"></strong>
+    </div>
+    <div class="prize-item silver">
+      <i class="fas fa-medal"></i>
+      <span>2nd</span>
+      <strong id="prize2"></strong>
+    </div>
+    <div class="prize-item bronze">
+      <i class="fas fa-medal"></i>
+      <span>3rd</span>
+      <strong id="prize3"></strong>
+    </div>
+  </div>
+</div>
+
+
+    <!-- COORDINATORS -->
+      <div class="section" id="coordinatorSection">
+  <h3><i class="fas fa-user-tie"></i> Staff Coordinators</h3>
+  <div class="coordinator-grid" id="modalStaffCoordinators"></div>
+
+  <h3 style="margin-top:1.5rem;">
+    <i class="fas fa-user-graduate"></i> Student Coordinators
+  </h3>
+  <div class="coordinator-grid" id="modalStudentCoordinators"></div>
+</div>
+
+
+    <!-- ACTION BUTTONS -->
+    <div class="modal-actions">
+      <button class="register-btn" id="registerBtn">
+  Register Now
+</button>
+
+      <button class="close-btn" onclick="closeEventModal()">
+        Close
+      </button>
+    </div>
+
+  </div>
+</div>
+
   
   
 </body>
