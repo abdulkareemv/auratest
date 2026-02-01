@@ -150,3 +150,20 @@ eventModal.addEventListener("click", e => {
 document.addEventListener("keydown", e => {
   if (e.key === "Escape") closeEventModal();
 });
+
+// Select all elements with hover effects(mobile touch effect)
+  const touchElements = document.querySelectorAll(
+    ".coordinator-card, .close-btn, .register-btn, .event-card, .event-modal-close"
+  );
+
+  touchElements.forEach(el => {
+    el.addEventListener("touchstart", () => {
+      el.classList.add("touch-active");
+    });
+    el.addEventListener("touchend", () => {
+      el.classList.remove("touch-active");
+    });
+    el.addEventListener("touchcancel", () => {
+      el.classList.remove("touch-active");
+    });
+  });
