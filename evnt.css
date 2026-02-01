@@ -639,12 +639,13 @@ flex-shrink: 0;
 }
 
 .coordinator-card a {
-  color: #38bdf8;
+  color: #f8fafc; /* white by default */
   text-decoration: none;
+  transition: color 0.25s ease;
 }
 
 .coordinator-card a:hover {
-  text-decoration: underline;
+  color: #38bdf8; /* cyan on hover */
 }
 
 .coordinator-card span {
