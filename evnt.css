@@ -867,5 +867,66 @@ flex-shrink: 0;
   }
 }
 
+/*--- Mobile Touch effect--*/
+/* ================= MOBILE TOUCH HOVER ================= */
+
+/* Coordinator cards */
+.coordinator-card:active,
+.coordinator-card.touch-active {
+  transform: scale(1.03);
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.18), rgba(34, 211, 238, 0.18));
+}
+
+.coordinator-card:active .coordinator-avatar,
+.coordinator-card.touch-active .coordinator-avatar {
+  background: linear-gradient(135deg, #38bdf8, #22d3ee);
+}
+
+/* Coordinator mobile numbers */
+.coordinator-card:active a,
+.coordinator-card.touch-active a {
+  color: #38bdf8;
+}
+
+/* Close button */
+.close-btn:active,
+.close-btn.touch-active {
+  background: linear-gradient(315deg, #ec4899, #8b5cf6, #38d3f8, #22d3ee);
+  color: #ffffff;
+  transform: scale(1.03);
+}
+
+/* Register button */
+.register-btn:active,
+.register-btn.touch-active {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ec4899, #8b5cf6, #38d3f8, #22d3ee);
+}
+
+/* Event card */
+.event-card:active,
+.event-card.touch-active {
+  transform: translateY(-6px);
+}
+
+/* Event icon and title gradient */
+.event-card:active .event-icon i,
+.event-card.touch-active .event-icon i,
+.event-card:active h3,
+.event-card.touch-active h3 {
+  background: linear-gradient(135deg, #ec4899, #8b5cf6, #38bdf8, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Modal close button */
+.event-modal-close:active,
+.event-modal-close.touch-active {
+  transform: scale(1.1);
+  background: linear-gradient(315deg, #ec4899, #8b5cf6, #38bdf8, #22d3ee);
+}
+
   </style>
 </head>
