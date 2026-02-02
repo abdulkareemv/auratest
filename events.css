@@ -362,7 +362,7 @@ transition: background 0.5s ease, color 0.5s ease;
 .event-modal-content {
   background: radial-gradient(circle at top left, #0f172a, #020617 70%);
   width: min(900px, 92%);
-  max-height: 85vh;
+  max-height: 95vh;
   overflow-y: auto;
   border-radius: 22px;
   padding: 2.5rem;
@@ -371,6 +371,7 @@ transition: background 0.5s ease, color 0.5s ease;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
   animation: popIn 0.35s ease;
 }
+
 
 /* ================================
    CLOSE BUTTON (TOP)
