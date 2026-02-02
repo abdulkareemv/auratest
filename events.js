@@ -18,6 +18,7 @@ function openEventModal(card) {
   modalTime.innerText = card.dataset.time || "";
   modalVenue.innerText = card.dataset.venue || "";
 
+  
   /* ========== RULES (NUMBERED) ========== */
   const rulesList = document.getElementById("modalRules");
   rulesList.innerHTML = "";
@@ -132,6 +133,26 @@ function openEventModal(card) {
     fee === "Free"
       ? "Register Now (Free)"
       : `Register Now (₹${fee})`;
+    /* ========== MODAL BACKGROUND IMAGE ========== */
+  const modalContent = eventModal.querySelector(".event-modal-content");
+  const bgImage = card.dataset.bg;
+
+  if (bgImage) {
+    modalContent.style.backgroundImage = `
+      linear-gradient(
+        rgba(2, 6, 23, 0.88),
+        rgba(2, 6, 23, 0.88)
+      ),
+      url('${bgImage}')
+    `;
+
+    modalContent.style.backgroundSize = "100% auto";
+    modalContent.style.backgroundRepeat = "repeat-y";
+    modalContent.style.backgroundPosition = "top center";
+  } else {
+    modalContent.style.backgroundImage = "";
+  }
+
 
   /* ========== SHOW MODAL ========== */
   eventModal.classList.add("active");
