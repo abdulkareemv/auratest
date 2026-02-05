@@ -724,13 +724,19 @@ flex-shrink: 0;
   flex: 1;
   padding: 1rem;
   border-radius: 14px;
-  border: none;
   font-size: 1.1rem;
   font-weight: 700;
   cursor: pointer;
+
   background: linear-gradient(315deg, #ec4899, #8b5cf6, #38bdf8, #22d3ee);
   color: #020617;
+
+  text-decoration: none;     /* 🔥 removes underline */
+  display: inline-flex;      /* keeps button layout */
+  align-items: center;
+  justify-content: center;
 }
+
 
 .close-btn {
   flex: 0.4;
@@ -751,6 +757,13 @@ flex-shrink: 0;
   color: #ffffff; /* dark text for contrast */
   transform: scale(1.03);
 }
+.register-btn:hover,
+.register-btn:focus,
+.register-btn:active {
+  text-decoration: none;
+  color: #020617;
+}
+
 /* ================================
    ANIMATION
 ================================ */
