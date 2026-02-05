@@ -18,6 +18,14 @@ function openEventModal(card) {
   modalTime.innerText = card.dataset.time || "";
   modalVenue.innerText = card.dataset.venue || "";
 
+/* ========== EVENT ICON ========== */
+
+const modalIconBox = document.getElementById("modalIcon");
+const iconClass = card.dataset.icon || "fa-calendar-alt";
+
+modalIconBox.innerHTML = `<i class="fa-solid ${iconClass}"></i>`;
+
+
   
   /* ========== RULES (NUMBERED) ========== */
   const rulesList = document.getElementById("modalRules");
@@ -127,12 +135,19 @@ function openEventModal(card) {
       ? "block"
       : "none";
 
-  /* ========== REGISTRATION FEE ========== */
-  const fee = card.dataset.fee || "Free";
-  document.getElementById("registerBtn").innerText =
-    fee === "Free"
-      ? "Register Now (Free)"
-      : `Register Now (₹${fee})`;
+/* ========== REGISTRATION BUTTON ========== */
+const registerBtn = document.getElementById("registerBtn");
+const regUrl = card.dataset.regurl || "#";
+const fee = card.dataset.fee || "Free";
+
+registerBtn.href = regUrl;
+registerBtn.innerText =
+  fee === "Free"
+    ? "Register Now (Free)"
+    : `Register Now (₹${fee})`;
+
+registerBtn.style.display = regUrl !== "#" ? "inline-flex" : "none";
+
     /* ========== MODAL BACKGROUND IMAGE ========== */
   const modalContent = eventModal.querySelector(".event-modal-content");
   const bgImage = card.dataset.bg;
