@@ -150,6 +150,7 @@ registerBtn.style.display = regUrl !== "#" ? "inline-flex" : "none";
 
     /* ========== MODAL BACKGROUND IMAGE ========== */
   const modalContent = eventModal.querySelector(".event-modal-content");
+
   const bgImage = card.dataset.bg;
 
   if (bgImage) {
@@ -167,11 +168,18 @@ registerBtn.style.display = regUrl !== "#" ? "inline-flex" : "none";
   } else {
     modalContent.style.backgroundImage = "";
   }
-
+// Reset modal scroll after it becomes visible
+setTimeout(() => {
+    modalContent.scrollTop = 0;
+}, 10);
 
   /* ========== SHOW MODAL ========== */
   eventModal.classList.add("active");
   document.body.style.overflow = "hidden";
+  // Reset modal scroll after it becomes visible
+setTimeout(() => {
+    modalContent.scrollTop = 0;
+}, 10);
 }
 
 /* ===================== CLOSE MODAL ===================== */
