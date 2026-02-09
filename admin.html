@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura 2K26 – Admin Dashboard</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="admin.css">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+
+<script>
+  const pwd = prompt("Enter Admin Password");
+  if (pwd !== "AURA@26") {
+    document.body.innerHTML =
+      "<h2 style='text-align:center;margin-top:40vh'>Access Denied</h2>";
+  }
+</script>
+
+<div class="container">
+  <h1>📊 Aura 2K26 Admin Dashboard</h1>
+
+  <div class="grid">
+    <div class="card">
+      <h2><i class="fas fa-users"></i> Live Visitors</h2>
+      <span id="liveUsers">0</span>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-globe"></i> Total Visitors</h2>
+      <span id="totalVisitors">—</span>
+      <div class="small">GA4</div>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-clipboard-list"></i> Total Registrations</h2>
+      <span id="totalRegs">0</span>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-school"></i> In-House</h2>
+      <span id="inHouse">0</span>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-user-graduate"></i> External</h2>
+      <span id="external">0</span>
+    </div>
+  </div>
+
+  <div class="event-box">
+    <h2>📌 Event-wise Registrations</h2>
+    <ul id="eventList"></ul>
+  </div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
