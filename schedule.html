@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Events | AURA 2K26</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="schedule.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo"><span>AURA 2K26</span></div>
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+
+<nav class="nav-links">
+  <a href="main.html">Home</a>
+  <a href="events.html">Events</a>
+  <a href="#" class="active">Schedule</a>
+  <a href="">Job Fair</a>
+  <a href="main.html#about">About Us</a>
+  <a href="main.html#contact">Contact</a>
+</nav>
+</header>
+
+<!-- ================= BODY ================= -->
+
+
+<section class="schedule-section">
+
+<h1 class="schedule-title">
+  <span class="gradient-text">AURA 2026</span> Schedule
+</h1>
+
+<div class="day-buttons">
+  <button class="day-btn active" onclick="showDay(1)">Day 1 - February 16</button>
+  <button class="day-btn" onclick="showDay(2)">Day 2 -February 17</button>
+</div>
+
+<!-- ================= DAY 1 ================= -->
+
+   <div id="day1" class="schedule-wrapper active">
+  <div class="schedule-row header">
+    <div>Event</div>
+    <div>Time</div>
+    <div>Venue</div>
+  </div>
+
+  <div class="schedule-row special-event"><div>Arduino Blitz – Arduino Prototyping</div><div>10:00 AM</div><div>ICFC (Room #218)</div></div>
+  <div class="schedule-row special-event"><div>Innofest – Best Project Contest (School Students)</div><div>10:00 AM</div><div>-</div></div>
+  <div class="schedule-row special-event"><div>Heat N Beat – Soldering Competition</div><div>10:00 AM</div><div>Basic Instrumentation Lab (Room #113)</div></div>
+  <div class="schedule-row special-event"><div>C Fresh – C Programming Contest</div><div>10:00 AM</div><div>CABM Lab (Room #219)</div></div>
+  <div class="schedule-row special-event"><div>Ideathon – Startup Idea Presentation</div><div>10:00 AM</div><div>Conference Hall (Room #204)</div></div>
+  <div class="schedule-row special-event"><div>Techno Quest – Technical Quiz</div><div>11:00 AM</div><div>Drawing Hall (Room #306)</div></div>
+  <div class="schedule-row special-event"><div>Samvad – Mock Press Conference</div><div>12:00 PM</div><div>Conference Hall (Room #204)</div></div>
+  <div class="schedule-row special-event"><div>Debug X – Circuit Debugging</div><div>1:00 PM</div><div>Circuit Lab (Room #206)</div></div>
+  <div class="schedule-row special-event"><div>Tech Talk – Seminar Contest</div><div>1:00 PM</div><div>Room #307</div></div>
+  <div class="schedule-row special-event"><div>AURA Hunt – Decode. Discover. Dominate.</div><div>1:00 PM</div><div>Room #304</div></div>
+  <div class="schedule-row"><div>Exhibition</div><div>9:30 AM – 4:00 PM</div><div>-</div></div>
+  <div class="schedule-row"><div>Food Fest</div><div>9:30 AM – 4:00 PM</div><div>Car Porch</div></div>
+  <div class="schedule-row"><div>Game Zone & Fun Zone</div><div>9:30 AM – 4:00 PM</div><div>Campus</div></div>
+  <div class="schedule-row"><div>Cultural Gala</div><div>10:00 AM – 4:00 PM</div><div>AURA Main Stage</div></div>
+  <div class="schedule-row"><div>Stalls</div><div>9:30 AM – 4:00 PM</div><div>Campus</div></div>
+
+</div>
+  </div>
+<!-- ================= DAY 2 ================= -->
+<div id="day2" class="schedule-wrapper">
+
+  <div class="schedule-row header">
+    <div>Event</div>
+    <div>Time</div>
+    <div>Venue</div>
+  </div>
+<div class="schedule-row inaug-event"><div>Inaugural Ceremony</div><div>10:00 AM</div><div>AURA Main Stage</div></div>
+  <div class="schedule-row highlight-event"><div>JobScape – Job Fair</div><div>9:30 AM</div><div>-</div></div>
+  <div class="schedule-row special-event"><div>TrackBot – Line Follower Grand Prix</div><div>10:00 AM</div><div>Communication Lab (Room #209)</div></div>
+  <div class="schedule-row special-event"><div>HobbIT – Hobby Circuit Making</div><div>10:00 AM</div><div>Circuit Lab (Room #206)</div></div>
+  <div class="schedule-row special-event"><div>Logic Relay Challenge – Relay Circuit</div><div>10:30 AM</div><div>Basic Instrumentation Lab (Room #113)</div></div>
+  <div class="schedule-row special-event"><div>Oracy – Best Manager</div><div>11:00 AM</div><div>Conference Hall (Room #204)</div></div>
+  <div class="schedule-row cultural-event"><div>Fashion Show – Style & Expression</div><div>1:00 PM</div><div>Stage</div></div>
+  <div class="schedule-row"><div>Exhibition</div><div>9:30 AM – 4:00 PM</div><div>-</div></div>
+  <div class="schedule-row"><div>Food Fest</div><div>9:30 AM – 4:00 PM</div><div>Car Porch</div></div>
+  <div class="schedule-row"><div>Game Zone & Fun Zone</div><div>9:30 AM – 4:00 PM</div><div>Campus</div></div>
+  <div class="schedule-row"><div>Cultural Gala</div><div>11:00 AM – 1:00 PM</div><div>AURA Main Stage</div></div>
+  <div class="schedule-row"><div>Stalls</div><div>9:30 AM – 4:00 PM</div><div>Campus</div></div>
+
+</div>
+
+</section>
+
+<div class="event-btn-container">
+  <a href="https://aura2k26.in/events" class="event-details-btn">
+    Event Details and Registration
+  </a>
+</div>
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+<!-- ================= FOOTER ================= -->
+  <div class="footer-divider"></div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer reveal" id="contact">
+  <div class="footer-brand">
+    <h3>AURA 2K26</h3>
+    <p>&copy; 2026 AURA. All rights reserved.</p>
+    <div class="footer-social">
+  <a href="https://instagram.com/aura2_k26" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+
+  </div>
+
+  <div class="footer-links">
+    <h4>Quick Links</h4>
+    <a href="main.html">Home</a>
+    <a href="#">Events</a>
+  </div>
+
+  <div class="footer-contact">
+    <h4>Contact</h4>
+    <p><i class="fas fa-envelope"></i> aura@gwptck.ac.in</p>
+    <p><i class="fas fa-phone"></i>9846 136 929</p>
+  </div>
+</footer>
+ 
+
+ 
+ <script>schedule.js</script> 
+</body>
+</html>
